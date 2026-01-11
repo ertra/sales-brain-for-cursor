@@ -1,0 +1,178 @@
+# Value Proposition: Revenue Orchestration Platform
+
+## Primary Value Proposition
+
+### For Revenue Leaders
+**Salesloft powers durable revenue growth by unifying your entire revenue motion—from first touch to expansion—on one AI-powered platform that turns insights into action.**
+
+---
+
+## The Salesloft Difference
+
+### Before Salesloft
+- Multiple disconnected point solutions
+- Data scattered across systems
+- Reps switching between 10+ tools daily
+- Manual data entry and admin work
+- Gut-feel forecasting
+- Reactive coaching
+- Unpredictable revenue
+
+### After Salesloft
+- One unified platform
+- Single source of truth
+- Everything in one workflow
+- Automatic activity capture
+- AI-powered forecasting
+- Proactive AI coaching
+- Predictable, durable revenue growth
+
+---
+
+## Core Value Pillars
+
+### 1. Revenue Orchestration
+**Unify your entire revenue motion**
+
+- First platform to bring sales engagement, conversation intelligence, deal management, forecasting, and AI agents together
+- Break down silos between sales, marketing, and CS
+- Single platform from prospecting to renewal
+
+*"Turn insights into action, all in one platform"*
+
+### 2. Purpose-Built AI
+**AI that works for you, not instead of you**
+
+- 25+ AI agents embedded across the platform
+- Conductor AI orchestrates workflows
+- AI trained on YOUR company's data
+- Automates busywork so sellers can sell
+
+*"Sellers using AI are 3.7x more likely to hit quota"*
+
+### 3. Signal-Driven Action
+**Act first on what matters most**
+
+- Unifies 1st and 3rd party buyer signals
+- AI translates signals into prioritized actions
+- Real-time buyer engagement visibility
+- Never miss a buying signal again
+
+*"Take the right actions at the right moments"*
+
+### 4. Fastest Time to Value
+**Results in days, not months**
+
+- Meaningful productivity within 10 days
+- Industry's fastest time to ROI
+- Reps love using it (highest adoption)
+- No complex implementation required
+
+*"Fast wins & results starting day 1"*
+
+---
+
+## Quantified Business Impact
+
+| Metric | Improvement | Source |
+|--------|-------------|--------|
+| Closed/Won Rate | +12% | Forrester TEI |
+| ROI | 236% over 3 years | Forrester TEI |
+| Deal Cycle Time | 2.5x faster | 3M Case Study |
+| Tech Stack Savings | $350K | Wrike Case Study |
+| Revenue Generated | $1M+ | NFP Case Study |
+| Response Rate | +60% | Forrester TEI |
+| Engagement | 4.7x higher | Multi-channel data |
+
+---
+
+## Value Proposition by Buyer
+
+### For the CRO
+**"Predictable revenue growth with proven ROI"**
+- 236% ROI over 3 years
+- AI-powered forecasting accuracy
+- Platform consolidation savings
+- Board-ready visibility
+
+### For VP of Sales
+**"Turn every rep into a top performer"**
+- 12% higher win rates
+- AI coaching at scale
+- 2.5x faster deal cycles
+- Real-time pipeline visibility
+
+### For RevOps
+**"One platform, unified data, measurable results"**
+- 180+ native integrations
+- Tech stack consolidation
+- Automatic data capture
+- Cross-platform analytics
+
+### For Sales Managers
+**"Coach smarter, forecast better, win more"**
+- 50% faster pipeline reviews
+- AI-assisted coaching scorecards
+- Stalled deal identification
+- Accurate forecasting
+
+### For Account Executives
+**"Sell smarter, close faster"**
+- AI does research for you
+- Know which deals to prioritize
+- Personalization in seconds
+- Mobile app for anywhere
+
+### For SDR/BDR
+**"Book more meetings with less effort"**
+- 254% more opportunities
+- AI-drafted personalized emails
+- Hours of research → seconds
+- 4.7x better engagement
+
+---
+
+## Competitive Differentiation
+
+### vs. Point Solutions
+| Challenge | Point Solutions | Salesloft |
+|-----------|-----------------|-----------|
+| Data | Fragmented | Unified |
+| Workflow | Multiple tools | Single platform |
+| AI | Siloed/none | Embedded throughout |
+| Cost | Multiple contracts | Consolidated |
+| Adoption | Tool fatigue | One place to work |
+
+### vs. CRM-Native Tools
+| Challenge | CRM Tools | Salesloft |
+|-----------|-----------|-----------|
+| Purpose | Database add-on | Built for sellers |
+| Adoption | Reps avoid CRM | Reps prefer Salesloft |
+| AI | Generic | Sales-specific |
+| UX | Complex | Workflow-first |
+
+---
+
+## Proof Points
+
+### Analyst Recognition
+- **Gartner**: Customer's Choice 2024 for Sales Engagement
+- **Forrester**: Leader in Revenue Orchestration Platforms Q3 2024
+- **G2**: Enterprise Leader 17 consecutive quarters
+
+### Customer Success
+- **5,000+** customers worldwide
+- **100M+** emails and calls monthly
+- **3M**: 2.5x faster deal cycles
+- **Wrike**: $350K tech stack savings
+- **NFP**: $1M+ revenue generated
+
+---
+
+## Elevator Pitch (30 seconds)
+
+> "Salesloft is the leading AI-powered revenue orchestration platform. We help companies like 3M, IBM, and Stripe drive predictable revenue growth by unifying sales engagement, deal management, and forecasting—all powered by AI agents that turn insights into action. Our customers see 12% higher win rates and 236% ROI."
+
+---
+*Last updated: 2026-01-11*
+*Generated by Sales Brain*

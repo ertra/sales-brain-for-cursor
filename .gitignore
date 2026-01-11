@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific - uncomment if you don't want to track research output
+# company.md
+# products/*.md
+
+# Company research (keep private by default)
+*/scraping.log
+# Uncomment to exclude all company data:
+# */company.md
+# */products/
+# */personas/
+outreach/
