@@ -6,3 +6,6 @@ beautifulsoup4>=4.11.0
 
 # Optional: For more advanced scraping
 lxml>=4.9.0
+
+# Optional: Bypass bot protections (Chrome TLS impersonation). Install with: pip install curl_cffi
+# curl_cffi>=0.5.0

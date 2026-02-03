@@ -28,7 +28,7 @@ Example: /add sales-play outreach
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
 
 2. **Review existing content**:
    - Products available
@@ -51,10 +51,10 @@ Example: /add sales-play outreach
    - Success metrics
    - Required materials
 
-4. **Create `{company}/sales-plays/` directory** if it doesn't exist
+4. **Create `brains/{company}/sales-plays/` directory** if it doesn't exist
 
 5. **Create sales play file**:
-   - Generate `{company}/sales-plays/{play-slug}.md`
+   - Generate `brains/{company}/sales-plays/{play-slug}.md`
    - Follow the template from `templates/sales-play-template.md`
 
 6. **Confirm creation**:

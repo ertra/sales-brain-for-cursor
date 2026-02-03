@@ -28,7 +28,7 @@ Example: /add use-case outreach
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
 
 2. **🔍 SCRAPE** for use cases:
    ```bash
@@ -47,10 +47,10 @@ Example: /add use-case outreach
    - Value delivered
    - Proof points
 
-4. **Create `{company}/use-cases/` directory** if it doesn't exist
+4. **Create `brains/{company}/use-cases/` directory** if it doesn't exist
 
 5. **Create use case file**:
-   - Generate `{company}/use-cases/{use-case-slug}.md`
+   - Generate `brains/{company}/use-cases/{use-case-slug}.md`
    - Follow the template from `templates/use-case-template.md`
 
 6. **Confirm creation**:

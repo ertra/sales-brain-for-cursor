@@ -28,7 +28,7 @@ Example: /add competitor outreach
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
 
 2. **Ask for competitor name and website**
 
@@ -55,10 +55,10 @@ Example: /add competitor outreach
    - Common objections when competing
    - How to win against them
 
-6. **Create `{company}/competitors/` directory** if it doesn't exist
+6. **Create `brains/{company}/competitors/` directory** if it doesn't exist
 
 7. **Create competitor file**:
-   - Generate `{company}/competitors/{competitor-slug}.md`
+   - Generate `brains/{company}/competitors/{competitor-slug}.md`
    - Follow the template from `templates/competitor-template.md`
 
 8. **Confirm creation**:

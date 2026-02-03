@@ -20,20 +20,20 @@ List all sales objects for a specific company or show all companies.
 ```
 🧠 Sales Brain - All Companies
 
-Found 2 company directories:
+Found 2 company directories (under brains/):
 
-1. outreach/
+1. brains/outreach/ (company: outreach)
    - Products: 7
    - Personas: 6
    - Competitors: 3
    - Status: 11/11 phases complete
 
-2. gong/
+2. brains/gong/ (company: gong)
    - Products: 5
    - Personas: 3
    - Status: 4/11 phases complete
 
-Use /list all {company} for details.
+Use /list all {company} for details. (Company names are the subdirectory names under brains/.)
 ```
 
 ### If company specified: Show all objects

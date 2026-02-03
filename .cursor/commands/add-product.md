@@ -32,7 +32,7 @@ Available companies:
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
    - If not, suggest `/start` to create company first
 
 2. **Ask for product information**:
@@ -49,10 +49,10 @@ Available companies:
    python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/products/new-product
    ```
 
-4. **Create `{company}/products/` directory** if it doesn't exist
+4. **Create `brains/{company}/products/` directory** if it doesn't exist
 
 5. **Create product file**:
-   - Generate `{company}/products/{product-slug}.md` following the template
+   - Generate `brains/{company}/products/{product-slug}.md` following the template
    - Use the product name to create a URL-friendly slug
    - Fill in all provided information
 
@@ -62,4 +62,4 @@ Available companies:
 
 ## Template
 
-Use the product template from `templates/` directory.
+Use `templates/product-template.md` for structure.

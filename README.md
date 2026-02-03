@@ -71,37 +71,39 @@ Then follow the 11-phase workflow:
 
 ## Output Structure
 
-Each company gets its own directory with all sales intelligence files:
+Each company gets its own directory under `brains/` with all sales intelligence files:
 
 ```
-sales-brain/
+sales-brain-for-cursor/
 ├── templates/              # Templates for all objects (shared)
-├── {company-slug}/         # Company-specific directory
-│   ├── INDEX.md            # Auto-generated file inventory
-│   ├── SUMMARY.md          # Auto-generated condensed context (~1000 tokens)
-│   ├── company.md          # Company overview
-│   ├── products/           # Products
-│   ├── target-companies.md # Target companies
-│   ├── personas/           # Buyer personas
-│   ├── pain-points/        # Pain points by persona
-│   ├── value-propositions/ # Value props (product × persona)
-│   ├── use-cases/          # Use case scenarios
-│   ├── competitors/        # Competitive intelligence
-│   ├── objections/         # Objection handling
-│   ├── case-studies/       # Customer success stories
-│   ├── sales-plays/        # Sales playbooks
-│   └── scraping.log        # URLs scraped log
-└── {another-company}/      # Another company...
+├── brains/                 # All company research lives here
+│   ├── {company-slug}/     # Company-specific directory
+│   │   ├── INDEX.md        # Auto-generated file inventory
+│   │   ├── README.md       # Auto-generated folder overview (GitHub default)
+│   │   ├── company.md      # Company overview
+│   │   ├── products/       # Products
+│   │   ├── target-companies.md
+│   │   ├── personas/       # Buyer personas
+│   │   ├── pain-points/    # Pain points by persona
+│   │   ├── value-propositions/
+│   │   ├── use-cases/
+│   │   ├── competitors/
+│   │   ├── objections/
+│   │   ├── case-studies/
+│   │   ├── sales-plays/
+│   │   └── scraping.log    # URLs scraped log
+│   └── {another-company}/  # Another company...
+└── ...
 ```
 
 ## Example: Salesloft
 
-A complete example is included in `salesloft/`:
+A complete example is included in `brains/salesloft/`:
 
 ```
-salesloft/
+brains/salesloft/
 ├── INDEX.md                    # File inventory & loading rules
-├── SUMMARY.md                  # Condensed context (~1000 tokens)
+├── README.md                   # Folder overview (GitHub default)
 ├── company.md                  # Company overview
 ├── target-companies.md         # ICP & buying committee
 ├── products/                   # 8 products documented
@@ -146,7 +148,7 @@ salesloft/
 | `/search {company} {query}` | Search all files (e.g., `/search salesloft ROI`) |
 | `/refresh {company}` | Full refresh - re-scrapes all sources |
 | `/generate-index {company}` | Generate INDEX.md (file inventory) |
-| `/generate-summary {company}` | Generate SUMMARY.md (~1000 tokens) |
+| `/generate-readme {company}` | Generate README.md (folder overview) |
 | `/generate-visualization {company}` | Generate interactive HTML graph |
 | `/list all` | List all companies |
 | `/list all {company}` | List all objects for a company |
@@ -166,17 +168,14 @@ salesloft/
 
 ## File Formats
 
-### SUMMARY.md
-The condensed context file (~1000 tokens) for AI agents:
-- Company overview (one paragraph)
-- Products with one-line descriptions
-- Personas with key pain/value mapping
-- Top competitors with positioning
-- Common objections with quick responses
-- Key proof points and differentiators
-- Sales plays with triggers
+### README.md
+Auto-generated folder overview (shown by default on GitHub):
+- Company name and tagline
+- Short summary and website link
+- "What's in this folder" table
+- Quick start for using the Sales Brain
 
-**Always load SUMMARY.md first for any company-related conversation.**
+**Open README.md for a one-page overview; use INDEX.md for full file list and loading rules.**
 
 ### company.md
 Contains:
@@ -237,7 +236,7 @@ The Cursor AI uses these instruction files:
 3. **Review carefully** before confirming - the AI will research based on your approval
 4. **Add products manually** if automatic detection misses some
 5. **Check scraping.log** to see which URLs were scraped
-6. **Load SUMMARY.md first** when using AI agents for company context
+6. **Load README.md or INDEX.md** when using AI agents for company context
 
 ## Web Scraping
 
@@ -245,10 +244,10 @@ Sales Brain uses a Python script for web scraping:
 
 ```bash
 # Scrape a URL (log to company directory)
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d {company}/
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company}/
 
 # Scrape and save to JSON file
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d {company}/ -o output.json
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company}/ -o output.json
 ```
 
 **Options:**
@@ -267,7 +266,7 @@ The script extracts:
 
 ## ⚠️ Disclaimer
 
-**The example company data included in this repository (e.g., `salesloft/`) is for demonstration purposes only.**
+**The example company data included in this repository (e.g., `brains/salesloft/`) is for demonstration purposes only.**
 
 - All information was gathered from publicly available sources (company websites, public documentation)
 - This data is provided to illustrate how the tool works and what output to expect

@@ -28,4 +28,6 @@ Thumbs.db
 # */company.md
 # */products/
 # */personas/
-outreach/
+
+*.json
+*.log

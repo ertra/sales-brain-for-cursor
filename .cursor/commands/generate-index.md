@@ -27,7 +27,7 @@ Example: /generate-index outreach
 
 ## What It Does
 
-Scans the company directory and creates/updates `{company}/INDEX.md` with:
+Scans the company directory and creates/updates `brains/{company}/INDEX.md` with:
 
 1. **Quick Reference** - Company name, website, main products
 2. **File Inventory** - List of all .md files organized by category
@@ -37,7 +37,7 @@ Scans the company directory and creates/updates `{company}/INDEX.md` with:
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
 
 2. **Scan directory structure**:
    - Count files in each subdirectory
@@ -117,7 +117,7 @@ Load for specific sales motions:
 ```
 
 4. **Save INDEX.md**:
-   - Write to `{company}/INDEX.md`
+   - Write to `brains/{company}/INDEX.md`
 
 5. **Confirm creation**:
    - Show summary of what was indexed
@@ -147,5 +147,5 @@ Load for specific sales motions:
 - Sales Plays: 4 files
 
 Total: 54 files indexed
-Location: outreach/INDEX.md
+Location: brains/outreach/INDEX.md
 ```

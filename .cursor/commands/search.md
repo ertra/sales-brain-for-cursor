@@ -31,19 +31,19 @@ Example: /search outreach pricing objection
 
 ### Step 1: Validate Company Exists
 
-Check if `{company-slug}/` directory exists.
+Check if `brains/{company-slug}/` directory exists.
 
 ### Step 2: Search All Markdown Files
 
 Use grep to search across all `.md` files in the company directory:
 
 ```bash
-grep -r -i -n "{query}" {company-slug}/ --include="*.md"
+grep -r -i -n "{query}" brains/{company-slug}/ --include="*.md"
 ```
 
 Or search with context:
 ```bash
-grep -r -i -n -C 3 "{query}" {company-slug}/ --include="*.md"
+grep -r -i -n -C 3 "{query}" brains/{company-slug}/ --include="*.md"
 ```
 
 ### Step 3: Present Results

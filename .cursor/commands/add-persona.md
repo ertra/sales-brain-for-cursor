@@ -32,7 +32,7 @@ Available companies:
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
    - If not, suggest `/start` to create company first
 
 2. **Ask for persona information**:
@@ -50,10 +50,10 @@ Available companies:
    python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/solutions/for-sales-leaders
    ```
 
-4. **Create `{company}/personas/` directory** if it doesn't exist
+4. **Create `brains/{company}/personas/` directory** if it doesn't exist
 
 5. **Create persona file**:
-   - Generate `{company}/personas/{persona-slug}.md` following the template
+   - Generate `brains/{company}/personas/{persona-slug}.md` following the template
    - **IMPORTANT**: Do NOT include a "Company" field - personas are generic
 
 6. **Confirm creation**:
@@ -64,4 +64,4 @@ Available companies:
 
 - Personas are GENERIC - they work for any target company
 - Do NOT include a specific "Company" field in the persona file
-- Use the persona template from `templates/` directory
+- Use `templates/persona-template.md` for structure

@@ -203,7 +203,7 @@ Add any new URLs to `scraping.log` with timestamp.
 
 After all updates are applied, regenerate the INDEX.md file:
 
-1. Scan all files in `{company}/` directory
+1. Scan all files in `brains/{company}/` directory
 2. Update file counts and descriptions
 3. Update "Last generated" timestamp
 4. Show confirmation

@@ -122,13 +122,13 @@ Use terminal commands to check modification dates:
 
 ```bash
 # Get modification date of a file
-stat -f "%Sm" {company}/company.md
+stat -f "%Sm" brains/{company}/company.md
 
 # List all files with dates
-find {company}/ -name "*.md" -exec stat -f "%Sm %N" {} \;
+find brains/{company}/ -name "*.md" -exec stat -f "%Sm %N" {} \;
 
 # Or on Linux:
-find {company}/ -name "*.md" -printf "%T+ %p\n" | sort -r
+find brains/{company}/ -name "*.md" -printf "%T+ %p\n" | sort -r
 ```
 
 ## No Company Specified
@@ -138,14 +138,14 @@ If user runs `/status` without a company:
 ```
 🧠 Sales Brain - Available Companies
 
-Found 2 company directories:
+Found 2 company directories (under brains/):
 
-1. outreach/
+1. brains/outreach/
    - 11/11 phases complete
    - Last updated: 2 days ago
    - 54 files
 
-2. gong/
+2. brains/gong/
    - 4/11 phases complete
    - Last updated: 5 days ago
    - 12 files

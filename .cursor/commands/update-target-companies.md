@@ -32,7 +32,7 @@ Available companies:
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
    - If not, suggest `/start` to create company first
 
 2. **Read existing target-companies.md** (if exists):
@@ -52,7 +52,7 @@ Available companies:
    - New industries to target?
    - Updated characteristics?
 
-5. **Update `{company}/target-companies.md`**:
+5. **Update `brains/{company}/target-companies.md`**:
    - Merge new information
    - Preserve existing profiles
    - Add new profiles

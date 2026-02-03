@@ -16,7 +16,7 @@ Generate an interactive HTML visualization of the sales brain knowledge graph.
 
 ## What It Does
 
-Scans all files in `{company}/` and generates `{company}/visualization.html` - an interactive force-directed graph showing:
+Scans all files in `brains/{company}/` and generates `brains/{company}/visualization.html` - an interactive force-directed graph showing:
 
 1. **All sales objects as nodes** with type-based colors
 2. **Relationships as edges** showing connections

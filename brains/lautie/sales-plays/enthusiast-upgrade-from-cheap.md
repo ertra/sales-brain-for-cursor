@@ -1,0 +1,95 @@
+# Sales Play: Enthusiast Upgrade from Cheap Fidgets
+
+## Play Overview
+
+| | |
+|--|--|
+| **Play name** | Enthusiast Upgrade from Cheap Fidgets |
+| **Target persona** | Fidget & EDC Enthusiast |
+| **Target** | Individual who has tried cheap/broken fidgets or wants first premium option |
+| **Products** | Fidget Spinners, Fidget Sliders, then optionally Fidget Rings / Pendants |
+| **Trigger** | Post-purchase review mention of “upgrade,” “replacement,” “broke”; or inbound from “best fidget” / “premium fidget” search |
+| **Play type** | Inbound / lifecycle (post-purchase content, retargeting) |
+
+## When to Run This Play
+
+### Trigger Events
+- Visitor or customer mentions previous fidget broke or was unsatisfying
+- Search or referral: “premium fidget,” “metal fidget,” “fidget that lasts”
+- Review or UGC from someone who “upgraded” from Amazon/generic
+- First purchase (slider or spinner)—trigger follow-up for ring/pendant for “meetings and travel”
+
+### Ideal Signals
+- Browsing spinner and slider pages; reading reviews
+- Cart with one item near free-shipping threshold ($50)
+- Returning visitor who didn’t buy (retarget with durability / “upgrade” message)
+
+### Qualification (implicit)
+| Criteria | Indication |
+|----------|------------|
+| Intent | Looking for durable or premium option; or replacing broken fidget |
+| Budget | Willing to spend $20–150+ for quality (entry to mid) |
+| Use case | Desk/pocket first; possibly interested in discreet later |
+
+## The Play
+
+### Objective
+Convert visitors/customers who are ready to move from cheap fidgets to LAUTIE (first purchase or add ring/pendant for discreet use).
+
+### Value Proposition for This Play
+“Premium metal, built to last. In-house manufacturing so you’re not replacing it in a few months. And if you ever need something for meetings or travel, we’ve got rings and pendants in the same brand.”
+
+## Execution Steps
+
+### Step 1: Capture intent (site / ads / content)
+- **Where**: Homepage, category pages, product pages, “why LAUTIE” or “metal vs plastic” content
+- **Message**: Durability, in-house QC, “upgrade from cheap”; entry options (Bit-05, Noiz Air-Nano, Choc, Resistor)
+- **CTA**: “Find your fidget” / “Shop by category” / “See best sellers”
+
+### Step 2: Reduce friction at consideration
+- **Reviews and ratings**: Surface Choc, Mechanic-I, Resistor, Bit-04 Tri ratings
+- **Free shipping**: Call out “Free shipping on orders over $50” on cart and product pages
+- **Entry tier**: Highlight one or two entry-level products so “premium” isn’t only $100+
+
+### Step 3: Discovery (if human touch—chat, email reply)
+**Questions**:
+1. “What are you using now for fidgeting, and what’s let you down about it?”
+2. “Do you prefer the spin of a spinner or the slide/click of a slider?”
+3. “Do you need something you can use in meetings or on the go without it being obvious?”
+4. “What’s your budget range—entry level or ready to go mid/flagship?”
+
+**Points to cover**:
+- Metal + in-house = durability; no more replacement cycle
+- Full lineup: start with spinner or slider; add ring or pendant later if they want discreet
+- Entry options so they can try without going flagship
+
+### Step 4: First purchase → expand (lifecycle)
+- **Post-purchase email**: “Love your [product]? Add a ring or pendant for meetings and travel—same brand, same quality.”
+- **Trigger**: 30–60 days after first purchase; or if they bought only desk/pocket product
+- **Offer**: Link to Fidget Rings and Pendants; “best for discreet” short guide
+
+### Step 5: Objection handling (quick ref)
+| Objection | Response |
+|-----------|----------|
+| “Too expensive” / “Amazon cheaper” | Metal + QC, lasts; entry-level options; cost over time vs. replacing cheap ones |
+| “I don’t need another” | Do you have something for meetings/travel? Ring/pendant = discreet |
+| “Too much to choose from” | Form first (spinner vs. slider vs. wearable); then best sellers + budget |
+
+## Resources & Content
+- **Value prop**: [fidget-enthusiast-value-prop.md](../value-propositions/fidget-enthusiast-value-prop.md)
+- **Pain points**: [fidget-enthusiast-pain-points.md](../pain-points/fidget-enthusiast-pain-points.md)
+- **Use cases**: [desk-and-pocket-fidget](../use-cases/desk-and-pocket-fidget.md), [discreet-fidget-meetings-and-travel](../use-cases/discreet-fidget-meetings-and-travel.md)
+- **Case study**: [enthusiast-upgrade-story.md](../case-studies/enthusiast-upgrade-story.md)
+- **Objections**: [fidget-enthusiast-objections.md](../objections/fidget-enthusiast-objections.md)
+
+## Success Metrics (D2C)
+| Metric | Target (example) |
+|--------|-------------------|
+| Add-to-cart from “upgrade” or durability messaging | Track % of ATC from relevant traffic |
+| Conversion (first purchase) | Site/segment conversion rate |
+| Second purchase (ring/pendant after spinner/slider) | % of first-time buyers who buy again in 90 days |
+| AOV | Maintain or increase with free-ship threshold and add-ons |
+
+---
+*Last updated: 2026-02-03*
+*Generated by Sales Brain*

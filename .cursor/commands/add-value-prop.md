@@ -28,14 +28,14 @@ Example: /add value-prop outreach
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
 
 2. **List existing products**:
-   - Show products from `{company}/products/` directory
+   - Show products from `brains/{company}/products/` directory
    - Ask which product
 
 3. **List existing personas**:
-   - Show personas from `{company}/personas/` directory
+   - Show personas from `brains/{company}/personas/` directory
    - Ask which persona
 
 4. **🔍 SCRAPE** for value messaging:
@@ -52,10 +52,10 @@ Example: /add value-prop outreach
    - Messaging framework (headlines, taglines)
    - Proof points
 
-6. **Create `{company}/value-propositions/` directory** if it doesn't exist
+6. **Create `brains/{company}/value-propositions/` directory** if it doesn't exist
 
 7. **Create value proposition file**:
-   - Generate `{company}/value-propositions/{product-slug}-{persona-slug}.md`
+   - Generate `brains/{company}/value-propositions/{product-slug}-{persona-slug}.md`
    - Follow the template from `templates/value-proposition-template.md`
 
 8. **Confirm creation**:

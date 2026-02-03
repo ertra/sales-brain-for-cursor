@@ -32,15 +32,15 @@ Available companies:
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
    - If not, show available companies
 
-2. **Check for `{company}/personas/` directory**:
+2. **Check for `brains/{company}/personas/` directory**:
    - If it doesn't exist, inform the user that no personas have been added yet
    - Suggest using `/add persona {company}` or `/continue {company}` to add personas
 
 3. **List all persona files**:
-   - Read all `.md` files in the `{company}/personas/` directory
+   - Read all `.md` files in the `brains/{company}/personas/` directory
    - Extract persona names and basic info from each file
 
 4. **Display persona summary**:
@@ -50,12 +50,12 @@ Available companies:
    1. SDR/BDR
       Sales Development Representative
       Key problems: Not enough pipeline, manual prospecting
-      → outreach/personas/sdr-bdr.md
+      → brains/outreach/personas/sdr-bdr.md
 
    2. Account Executive
       Quota-carrying sales rep
       Key problems: Deal visibility, forecast accuracy
-      → outreach/personas/account-executive.md
+      → brains/outreach/personas/account-executive.md
 
    ...
    ```

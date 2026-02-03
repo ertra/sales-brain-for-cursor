@@ -22,10 +22,10 @@ When a valid company name is provided:
 
 ### Step 1: Verify Company Directory Exists
 
-Check if `{company-slug}/` directory exists.
+Check if `brains/{company-slug}/` directory exists.
 
 If it doesn't exist:
-- Tell user: "Company '{company}' not found. Available companies: [list]. Or use `/start` to begin a new company."
+- Tell user: "Company '{company}' not found. Available companies: [list from brains/]. Or use `/start` to begin a new company."
 
 ### Step 2: Detect Completed Phases
 
@@ -33,17 +33,17 @@ Check which files/directories exist to determine progress:
 
 | Phase | Check | Files to Look For |
 |-------|-------|-------------------|
-| 1. Company | ✓ if exists | `{company}/company.md` |
-| 2. Products | ✓ if has files | `{company}/products/*.md` |
-| 3. Target Companies | ✓ if exists | `{company}/target-companies.md` |
-| 4. Personas | ✓ if has files | `{company}/personas/*.md` |
-| 5. Pain Points | ✓ if has files | `{company}/pain-points/*.md` |
-| 6. Value Props | ✓ if has files | `{company}/value-propositions/*.md` |
-| 7. Use Cases | ✓ if has files | `{company}/use-cases/*.md` |
-| 8. Competitors | ✓ if has files | `{company}/competitors/*.md` |
-| 9. Objections | ✓ if has files | `{company}/objections/*.md` |
-| 10. Case Studies | ✓ if has files | `{company}/case-studies/*.md` |
-| 11. Sales Plays | ✓ if has files | `{company}/sales-plays/*.md` |
+| 1. Company | ✓ if exists | `brains/{company}/company.md` |
+| 2. Products | ✓ if has files | `brains/{company}/products/*.md` |
+| 3. Target Companies | ✓ if exists | `brains/{company}/target-companies.md` |
+| 4. Personas | ✓ if has files | `brains/{company}/personas/*.md` |
+| 5. Pain Points | ✓ if has files | `brains/{company}/pain-points/*.md` |
+| 6. Value Props | ✓ if has files | `brains/{company}/value-propositions/*.md` |
+| 7. Use Cases | ✓ if has files | `brains/{company}/use-cases/*.md` |
+| 8. Competitors | ✓ if has files | `brains/{company}/competitors/*.md` |
+| 9. Objections | ✓ if has files | `brains/{company}/objections/*.md` |
+| 10. Case Studies | ✓ if has files | `brains/{company}/case-studies/*.md` |
+| 11. Sales Plays | ✓ if has files | `brains/{company}/sales-plays/*.md` |
 
 ### Step 3: Show Progress Summary
 
@@ -100,12 +100,13 @@ Example: /continue outreach
 ```
 ❌ Company '{company}' not found.
 
-Available companies:
+Available companies (from brains/):
 - outreach
 - gong
 
 Or use /start to begin a new company.
 ```
+(List available companies by listing subdirectories of `brains/`.)
 
 ### All phases complete
 ```

@@ -12,19 +12,23 @@ You are a Sales Brain assistant. Your purpose is to help users research and docu
 **CRITICAL: Use the Python script for all web scraping.**
 
 ```bash
-# Scrape a single URL
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url>
+# Scrape a single URL (use -d so scraping.log goes to company dir)
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company}/
 
-# Scrape and automatically follow discovered links
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> --follow about
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> --follow products,pricing
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> --follow all
+# Scrape homepage + 1 level of same-domain subpages; saves each page to brains/{company}/scraped/ for later use
+python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com -d brains/{company}/ --subpages
+python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com -d brains/{company}/ --subpages --max-subpages 20
+
+# Scrape and automatically follow discovered links (use -d so scraping.log goes to company dir)
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company}/ --follow about
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company}/ --follow products,pricing
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company}/ --follow all
 
 # Limit max pages when following (default: 10)
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> --follow all --max-pages 15
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company}/ --follow all --max-pages 15
 
-# Save output to file
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -o output.json
+# Save output to file (use -d so scraping.log goes to company dir)
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company}/ -o output.json
 ```
 
 ### Follow Categories
@@ -43,7 +47,15 @@ python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -o output.json
 - **Scrape first, validate with user second**
 - Scraping provides 80% of info; user validates 20%
 - **Use --follow** to automatically scrape multiple pages in one command
-- **Run from company directory** for proper logging to `scraping.log`
+- **Use -d brains/{company}/** when scraping so `scraping.log` is written to the company directory
+
+### Use existing scraped/ data in workflow steps
+Before scraping in a phase, check if `brains/{company}/scraped/` already has useful pages:
+```bash
+python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{company}/
+python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{company}/ -p products
+```
+If `index.json` and `main.json` exist, use that data for the phase (e.g. main for company; product/solutions subpages for products and personas). Scrape only when scraped/ is missing or the phase needs URLs not in scraped/.
 
 ### What to Scrape by Phase
 | Phase | Command |
@@ -65,12 +77,12 @@ When the user types `/start`, begin the sales brain workflow.
 
 ## Directory Structure
 
-All files for a company are stored in a company-specific directory:
+All files for a company are stored in a company-specific directory under `brains/`:
 
 ```
-{company-slug}/
+brains/{company-slug}/
 ├── INDEX.md (auto-generated, file inventory for AI agents)
-├── SUMMARY.md (auto-generated, condensed context ~1000 tokens)
+├── README.md (auto-generated, human-friendly overview; default view on GitHub)
 ├── company.md
 ├── products/
 ├── target-companies.md
@@ -88,7 +100,7 @@ All files for a company are stored in a company-specific directory:
 
 When starting a new company:
 1. Convert company name to URL-friendly slug (lowercase, hyphens)
-2. Create directory: `{company-slug}/`
+2. Create directory: `brains/{company-slug}/`
 3. All subsequent files go inside this directory
 
 ## Available Commands
@@ -115,7 +127,7 @@ When starting a new company:
 - `/search {company} {query}` - Search across all files
 - `/refresh {company}` - Full refresh when web content changed (re-scrapes all sources)
 - `/generate-index {company}` - Generate/regenerate INDEX.md for AI agent context
-- `/generate-summary {company}` - Generate/regenerate SUMMARY.md (~1000 tokens)
+- `/generate-readme {company}` - Generate/regenerate README.md (folder overview)
 - `/generate-visualization {company}` - Generate interactive HTML knowledge graph
 
 ## Object Relationships

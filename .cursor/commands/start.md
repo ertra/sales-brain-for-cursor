@@ -8,10 +8,13 @@ When the user types `/start`, begin the Sales Brain research workflow.
 
 ```bash
 # Scrape a URL (log to company directory)
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d {company-slug}/
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company-slug}/
+
+# Scrape homepage + 1 level of subpages (saves to brains/{company-slug}/scraped/ for later use)
+python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com -d brains/{company-slug}/ --subpages
 
 # Scrape and save to JSON file
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d {company-slug}/ -o output.json
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company-slug}/ -o output.json
 ```
 
 The script extracts: title, description, headings, links, and text content.
@@ -19,18 +22,30 @@ The `-d` flag specifies where to write `scraping.log`.
 
 **Strategy**: Scrape first, validate with user second.
 
+## Use existing scraped data first
+
+Before scraping in a phase, **check** `brains/{company-slug}/scraped/`:
+
+```bash
+python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{company-slug}/
+python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{company-slug}/ -p products
+```
+
+If `scraped/index.json` and `main.json` exist, **use that data** for the phase (e.g. main.json for company; product/solutions subpages for products and personas). Only run new scrapes for URLs not already in scraped/, or when scraped/ is empty.
+
 ## Company Directory Structure
 
 **IMPORTANT**: All files for a company are stored in a company-specific directory.
 
 When starting:
 1. Ask for company name and website URL
-2. Create company directory: `{company-slug}/` (lowercase, hyphens)
+2. Create company directory: `brains/{company-slug}/` (lowercase, hyphens)
 3. All files go inside this directory
 
 ```
-{company-slug}/
+brains/{company-slug}/
 ├── company.md
+├── scraped/           # main.json, index.json, subpage .json (use in phases before scraping)
 ├── products/
 ├── target-companies.md
 ├── personas/
@@ -48,65 +63,65 @@ When starting:
 
 ### Phase 1: Company Research
 1. **Ask for**: Company name + Website URL
-2. **Create directory**: `{company-slug}/`
+2. **Create directory**: `brains/{company-slug}/`
 3. **🔍 SCRAPE** using Python:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com -d {company-slug}/
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/about -d {company-slug}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com -d brains/{company-slug}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/about -d brains/{company-slug}/
    ```
-4. **Create** `{company-slug}/company.md`
+4. **Create** `brains/{company-slug}/company.md`
 5. **Present findings** and ask for confirmation
 
 ### Phase 2: Product Detection
-- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/products -d {company-slug}/`
-- Create `{company-slug}/products/{product-slug}.md` files
+- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/products -d brains/{company-slug}/`
+- Create `brains/{company-slug}/products/{product-slug}.md` files
 
 ### Phase 3: Target Companies
-- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/customers -d {company-slug}/`
+- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/customers -d brains/{company-slug}/`
 - Ask user for additional context
-- Create `{company-slug}/target-companies.md`
+- Create `brains/{company-slug}/target-companies.md`
 
 ### Phase 4: Personas
-- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/solutions -d {company-slug}/`
+- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/solutions -d brains/{company-slug}/`
 - Ask user to identify personas
-- Create `{company-slug}/personas/{persona-slug}.md` files
+- Create `brains/{company-slug}/personas/{persona-slug}.md` files
 
 ### Phase 5: Pain Points
-- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/company/reviews -d {company-slug}/`
-- Create `{company-slug}/pain-points/{persona}-pain-points.md` files
+- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/company/reviews -d brains/{company-slug}/`
+- Create `brains/{company-slug}/pain-points/{persona}-pain-points.md` files
 
 ### Phase 6: Value Propositions
-- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/roi -d {company-slug}/`
-- Create `{company-slug}/value-propositions/{product}-{persona}.md` files
+- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/roi -d brains/{company-slug}/`
+- Create `brains/{company-slug}/value-propositions/{product}-{persona}.md` files
 
 ### Phase 7: Use Cases
-- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/case-studies -d {company-slug}/`
-- Create `{company-slug}/use-cases/{use-case}.md` files
+- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/case-studies -d brains/{company-slug}/`
+- Create `brains/{company-slug}/use-cases/{use-case}.md` files
 
 ### Phase 8: Competitive Intelligence
 - **🔍 SCRAPE COMPETITOR WEBSITES**:
   ```bash
-  python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com -d {company-slug}/
-  python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com/products -d {company-slug}/
+  python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com -d brains/{company-slug}/
+  python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com/products -d brains/{company-slug}/
   ```
-- Create `{company-slug}/competitors/{competitor}.md` files
+- Create `brains/{company-slug}/competitors/{competitor}.md` files
 
 ### Phase 9: Objection Handling
-- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/company/reviews -d {company-slug}/`
-- Create `{company-slug}/objections/{persona}-objections.md` files
+- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/company/reviews -d brains/{company-slug}/`
+- Create `brains/{company-slug}/objections/{persona}-objections.md` files
 
 ### Phase 10: Case Studies
-- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/customers/story -d {company-slug}/`
-- Create `{company-slug}/case-studies/{customer}.md` files
+- **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/customers/story -d brains/{company-slug}/`
+- Create `brains/{company-slug}/case-studies/{customer}.md` files
 
 ### Phase 11: Sales Plays
 - **Synthesize** all gathered information
-- Create `{company-slug}/sales-plays/{play}.md` files
+- Create `brains/{company-slug}/sales-plays/{play}.md` files
 
-### Final Step: Generate INDEX.md and SUMMARY.md
-- **Auto-generate** `{company-slug}/INDEX.md` - File inventory, loading rules
-- **Auto-generate** `{company-slug}/SUMMARY.md` - Condensed context (~1000 tokens)
-- These help AI agents load context efficiently
+### Final Step: Generate INDEX.md and README.md
+- **Auto-generate** `brains/{company-slug}/INDEX.md` - File inventory, loading rules
+- **Auto-generate** `brains/{company-slug}/README.md` - Human-friendly overview (GitHub/file browser default)
+- README helps humans; INDEX helps AI agents load context efficiently
 
 ## Scraping Checklist by Phase
 
@@ -126,10 +141,10 @@ When starting:
 
 ## Important Guidelines
 - **Create company directory first** before any files
-- **Use Python script** for all scraping: `python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d {company-slug}/`
+- **Use Python script** for all scraping: `python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company-slug}/`
 - **Always use `-d` flag** to log scrapes to the company directory
 - **Scrape before asking** - research first, validate second
 - Use URL-friendly slug for company name (lowercase, hyphens)
-- All files go inside the company directory
+- All files go inside the company directory (`brains/{company-slug}/`)
 - Reference templates from `templates/` directory
 - User can skip phases or use individual `/add` commands

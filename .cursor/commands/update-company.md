@@ -32,7 +32,7 @@ Available companies:
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/company.md` exists
+   - Check if `brains/{company}/company.md` exists
    - If not, suggest `/start` to create company first
 
 2. **Read existing company.md**:
@@ -50,7 +50,7 @@ Available companies:
    - Highlight what's new or different
    - Ask user to confirm updates
 
-5. **Update `{company}/company.md`**:
+5. **Update `brains/{company}/company.md`**:
    - Merge new information
    - Preserve user-added notes
    - Update timestamp

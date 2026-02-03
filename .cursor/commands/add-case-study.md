@@ -28,7 +28,7 @@ Example: /add case-study outreach
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
 
 2. **🔍 SCRAPE** customer stories:
    ```bash
@@ -47,10 +47,10 @@ Example: /add case-study outreach
    - Quotes from customer
    - Related use cases
 
-4. **Create `{company}/case-studies/` directory** if it doesn't exist
+4. **Create `brains/{company}/case-studies/` directory** if it doesn't exist
 
 5. **Create case study file**:
-   - Generate `{company}/case-studies/{customer-slug}.md`
+   - Generate `brains/{company}/case-studies/{customer-slug}.md`
    - Follow the template from `templates/case-study-template.md`
 
 6. **Confirm creation**:

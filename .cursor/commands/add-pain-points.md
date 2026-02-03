@@ -28,11 +28,11 @@ Example: /add pain-points outreach
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
    - If not, suggest `/start` to create company first
 
 2. **List existing personas**:
-   - Show personas from `{company}/personas/` directory
+   - Show personas from `brains/{company}/personas/` directory
    - Ask which persona to add pain points for
 
 3. **🔍 SCRAPE** for pain points:
@@ -49,10 +49,10 @@ Example: /add pain-points outreach
    - Which products address this pain point
    - Discovery questions to uncover this pain
 
-5. **Create `{company}/pain-points/` directory** if it doesn't exist
+5. **Create `brains/{company}/pain-points/` directory** if it doesn't exist
 
 6. **Create or update pain points file**:
-   - Generate `{company}/pain-points/{persona-slug}-pain-points.md`
+   - Generate `brains/{company}/pain-points/{persona-slug}-pain-points.md`
    - Follow the template from `templates/pain-points-template.md`
 
 7. **Confirm creation**:

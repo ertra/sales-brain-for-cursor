@@ -28,10 +28,10 @@ Example: /add objections outreach
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
 
 2. **List existing personas**:
-   - Show personas from `{company}/personas/` directory
+   - Show personas from `brains/{company}/personas/` directory
    - Ask which persona to add objections for
 
 3. **🔍 SCRAPE** for objections:
@@ -49,10 +49,10 @@ Example: /add objections outreach
    - Proof points to use
    - Prevention strategies
 
-5. **Create `{company}/objections/` directory** if it doesn't exist
+5. **Create `brains/{company}/objections/` directory** if it doesn't exist
 
 6. **Create or update objections file**:
-   - Generate `{company}/objections/{persona-slug}-objections.md`
+   - Generate `brains/{company}/objections/{persona-slug}-objections.md`
    - Follow the template from `templates/objection-template.md`
 
 7. **Confirm creation**:

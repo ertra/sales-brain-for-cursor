@@ -32,15 +32,15 @@ Available companies:
 ## Workflow Steps
 
 1. **Verify company exists**:
-   - Check if `{company}/` directory exists
+   - Check if `brains/{company}/` directory exists
    - If not, show available companies
 
-2. **Check for `{company}/products/` directory**:
+2. **Check for `brains/{company}/products/` directory**:
    - If it doesn't exist, inform the user that no products have been added yet
    - Suggest using `/add product {company}` or `/continue {company}` to add products
 
 3. **List all product files**:
-   - Read all `.md` files in the `{company}/products/` directory
+   - Read all `.md` files in the `brains/{company}/products/` directory
    - Extract product names and basic info from each file
 
 4. **Display product summary**:
@@ -49,11 +49,11 @@ Available companies:
 
    1. Sales Engagement
       Platform for automated outreach sequences
-      → outreach/products/sales-engagement.md
+      → brains/outreach/products/sales-engagement.md
 
    2. AI Agents
       Autonomous AI for sales workflows
-      → outreach/products/ai-agents.md
+      → brains/outreach/products/ai-agents.md
 
    ...
    ```
