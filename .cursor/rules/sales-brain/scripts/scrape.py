@@ -11,6 +11,9 @@ import json
 import sys
 import subprocess
 import argparse
+import time
+import random
+from copy import copy
 from pathlib import Path
 from urllib.parse import urlparse, urljoin
 from datetime import datetime
@@ -85,20 +88,31 @@ def _ensure_optional_dep(pip_name: str, description: str) -> bool:
         return False
 
 
-SCRAPING_AVAILABLE = _ensure_scraping_deps()
+# Lazy-init flags — dependencies are installed/imported on first use, not at import time.
+_SCRAPING_AVAILABLE: bool | None = None
+_CURL_CFFI_AVAILABLE: bool | None = None
+_curl_requests = None  # will hold curl_cffi.requests if available
 
-if SCRAPING_AVAILABLE:
-    import requests
-    from bs4 import BeautifulSoup
 
-# Optional: Chrome TLS impersonation to bypass bot protections
-CURL_CFFI_AVAILABLE = False
-if _ensure_optional_dep("curl_cffi", "curl_cffi for Chrome impersonation"):
-    try:
-        from curl_cffi import requests as curl_requests
-        CURL_CFFI_AVAILABLE = True
-    except ImportError:
-        pass
+def _init_deps() -> None:
+    """Lazily install and import scraping dependencies on first use."""
+    global _SCRAPING_AVAILABLE, _CURL_CFFI_AVAILABLE, _curl_requests
+    if _SCRAPING_AVAILABLE is not None:
+        return  # already initialised
+
+    _SCRAPING_AVAILABLE = _ensure_scraping_deps()
+    if _SCRAPING_AVAILABLE:
+        import requests  # noqa: F401 — imported for global availability
+        from bs4 import BeautifulSoup  # noqa: F401
+
+    _CURL_CFFI_AVAILABLE = False
+    if _ensure_optional_dep("curl_cffi", "curl_cffi for Chrome impersonation"):
+        try:
+            from curl_cffi import requests as _cr
+            _curl_requests = _cr
+            _CURL_CFFI_AVAILABLE = True
+        except ImportError:
+            pass
 
 
 def _project_root() -> Path:
@@ -119,29 +133,92 @@ def _load_template(name: str) -> str:
 class SalesBrain:
     """Main class for the Sales Brain research assistant."""
     
+    MAX_RETRIES = 3
+    RETRY_BACKOFF = 1.0  # seconds; doubles each retry
+    RETRY_JITTER = 0.5   # max random jitter added to each retry wait
+    REQUEST_DELAY = 0.5  # seconds between sequential requests
+    # HTTP status codes worth retrying (bot-detection often returns these spuriously)
+    RETRYABLE_STATUS_CODES = {403, 404, 429, 500, 502, 503}
+    
     def __init__(self, output_dir: str = "."):
+        _init_deps()  # lazy install/import on first use
         self.output_dir = Path(output_dir)
         self.products_dir = self.output_dir / "products"
         self.company_file = self.output_dir / "company.md"
         self.company_data = {}
         self.products = []
         self.pages_scraped = 0
+        self._session = None  # created lazily in _get_session()
+        self._warned_no_cffi = False  # print curl_cffi warning only once
         
     def ensure_directories(self):
         """Create necessary directories if they don't exist."""
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.products_dir.mkdir(parents=True, exist_ok=True)
-        
+
+    def _get_session(self):
+        """Return a reusable requests.Session (creates one on first call)."""
+        if self._session is None:
+            import requests as _req
+            self._session = _req.Session()
+            self._session.headers.update(BROWSER_HEADERS)
+        return self._session
+
     def _fetch_url(self, url: str):
-        """Fetch URL; use Chrome impersonation when curl_cffi is available to bypass bot protections."""
-        if CURL_CFFI_AVAILABLE:
-            return curl_requests.get(
-                url,
-                headers=BROWSER_HEADERS,
-                timeout=15,
-                impersonate="chrome120",
-            )
-        return requests.get(url, headers=BROWSER_HEADERS, timeout=15)
+        """Fetch URL with retry logic and connection reuse.
+
+        Retries on both connection-level errors (timeout, reset) and HTTP status codes
+        that are commonly returned by bot-detection systems (403, 404, 429, 5xx).
+        Uses Chrome TLS impersonation via curl_cffi when available; without it, Python's
+        requests library has a distinctive TLS fingerprint that many WAFs reject.
+        Note: 'Could not resolve host' (curl 6) means DNS failed — often due to no network.
+        """
+        import requests as _req
+
+        if not _CURL_CFFI_AVAILABLE and not self._warned_no_cffi:
+            self._warned_no_cffi = True
+            print("   ℹ️  curl_cffi not available — using plain requests (some sites may block Python's TLS fingerprint)", file=sys.stderr)
+
+        last_exc = None
+        last_response = None
+        for attempt in range(self.MAX_RETRIES):
+            try:
+                if _CURL_CFFI_AVAILABLE and _curl_requests is not None:
+                    resp = _curl_requests.get(
+                        url,
+                        headers=BROWSER_HEADERS,
+                        timeout=15,
+                        impersonate="chrome120",
+                    )
+                else:
+                    resp = self._get_session().get(url, timeout=15)
+
+                # If status is OK, return immediately
+                if resp.status_code not in self.RETRYABLE_STATUS_CODES:
+                    return resp
+
+                # Retryable HTTP status — retry with backoff
+                last_response = resp
+                if attempt < self.MAX_RETRIES - 1:
+                    wait = self.RETRY_BACKOFF * (2 ** attempt) + random.uniform(0, self.RETRY_JITTER)
+                    print(
+                        f"   ⚠️ HTTP {resp.status_code} for {url} — retry {attempt + 1}/{self.MAX_RETRIES} (waiting {wait:.1f}s)",
+                        file=sys.stderr,
+                    )
+                    time.sleep(wait)
+
+            except (_req.ConnectionError, _req.Timeout) as exc:
+                last_exc = exc
+                last_response = None
+                if attempt < self.MAX_RETRIES - 1:
+                    wait = self.RETRY_BACKOFF * (2 ** attempt) + random.uniform(0, self.RETRY_JITTER)
+                    print(f"   ⚠️ {type(exc).__name__} for {url} — retry {attempt + 1}/{self.MAX_RETRIES} (waiting {wait:.1f}s)", file=sys.stderr)
+                    time.sleep(wait)
+
+        # All retries exhausted — return last response if we have one, otherwise raise
+        if last_response is not None:
+            return last_response
+        raise last_exc
 
     def _get_all_same_domain_links(self, soup: BeautifulSoup, base_url: str) -> list:
         """Extract all same-domain links from the page (for 1-level subpage discovery)."""
@@ -178,7 +255,10 @@ class SalesBrain:
 
     def scrape_website(self, url: str, test_mode: bool = False, include_same_domain_links: bool = False) -> dict:
         """Scrape a website for company information. Ignores noindex and robots for research."""
-        if not SCRAPING_AVAILABLE:
+        import requests as _req
+        from bs4 import BeautifulSoup
+
+        if not _SCRAPING_AVAILABLE:
             return {"error": "Scraping libraries not installed. Run: pip install requests beautifulsoup4"}
         try:
             response = self._fetch_url(url)
@@ -206,13 +286,15 @@ class SalesBrain:
                 data["_test"] = {"request_headers": BROWSER_HEADERS, "response_status": response.status_code, "ok": True}
             return data
             
-        except Exception as e:
-            # requests and curl_cffi both use .response on HTTP errors
+        except (_req.RequestException, OSError) as e:
             resp = getattr(e, "response", None)
             status = getattr(resp, "status_code", None) if resp is not None else None
             if not test_mode:
                 self._update_scraping_log(url, status if status is not None else "error")
-            result = {"error": str(e), "url": url}
+            err_msg = str(e)
+            if "Could not resolve host" in err_msg or "curl: (6)" in err_msg:
+                err_msg += " (Hint: DNS/network failed — run with network access, e.g. outside sandbox or with full_network permission.)"
+            result = {"error": err_msg, "url": url}
             if test_mode:
                 result["_test"] = {"request_headers": BROWSER_HEADERS, "response_status": status, "ok": False}
             return result
@@ -237,7 +319,7 @@ class SalesBrain:
         base_domain = parsed_base.netloc
 
         # First scrape: get the page (usually homepage); all followed URLs come from links on this page
-        print(f"🔍 Scraping: {url}", file=__import__('sys').stderr)
+        print(f"🔍 Scraping: {url}", file=sys.stderr)
         main_data = self.scrape_website(url)
 
         result = {
@@ -274,7 +356,8 @@ class SalesBrain:
         # Scrape followed URLs (up to max_pages - 1, since we already scraped main)
         for link_info in urls_to_follow[:max_pages - 1]:
             link_url = link_info["url"]
-            print(f"🔍 Following [{link_info['category']}]: {link_url}", file=__import__('sys').stderr)
+            print(f"🔍 Following [{link_info['category']}]: {link_url}", file=sys.stderr)
+            time.sleep(self.REQUEST_DELAY)
             
             followed_data = self.scrape_website(link_url)
             followed_data["_category"] = link_info["category"]
@@ -286,7 +369,7 @@ class SalesBrain:
 
     def scrape_homepage_with_subpages(self, url: str, max_subpages: int = 30, test_mode: bool = False) -> dict:
         """Scrape the given URL (homepage) and all 1-level same-domain subpages. Saves each page to output_dir/scraped/ for later use."""
-        if not SCRAPING_AVAILABLE:
+        if not _SCRAPING_AVAILABLE:
             return {"error": "Scraping libraries not installed. Run: pip install requests beautifulsoup4"}
         # Normalize main URL (strip fragment)
         parsed_main = urlparse(url)
@@ -328,6 +411,7 @@ class SalesBrain:
         for i, sub_url in enumerate(to_scrape):
             slug = self._url_to_slug(sub_url)
             print(f"   [{i+1}/{len(to_scrape)}] {sub_url}", file=sys.stderr)
+            time.sleep(self.REQUEST_DELAY)
             data = self.scrape_website(sub_url, test_mode=test_mode)
             subpages_data.append({"url": sub_url, "slug": slug, "data": data})
             if not test_mode:
@@ -456,13 +540,12 @@ class SalesBrain:
         return ""
     
     def _get_headings(self, soup: BeautifulSoup) -> list:
-        """Extract all headings."""
+        """Extract all headings in document order."""
         headings = []
-        for tag in ['h1', 'h2', 'h3']:
-            for heading in soup.find_all(tag):
-                text = heading.get_text().strip()
-                if text:
-                    headings.append({"level": tag, "text": text})
+        for heading in soup.find_all(['h1', 'h2', 'h3']):
+            text = heading.get_text().strip()
+            if text:
+                headings.append({"level": heading.name, "text": text})
         return headings[:20]  # Limit to first 20
     
     def _get_important_links(self, soup: BeautifulSoup, base_url: str) -> dict:
@@ -476,6 +559,7 @@ class SalesBrain:
             "contact": [],
             "other": []
         }
+        seen_urls: dict[str, set[str]] = {cat: set() for cat in links}
 
         keywords = {
             "about": ["about", "company", "team", "story", "mission"],
@@ -496,13 +580,21 @@ class SalesBrain:
             categorized = False
             for category, kws in keywords.items():
                 if any(kw in text or kw in href.lower() for kw in kws):
-                    if full_url not in [l['url'] for l in links[category]]:
+                    if full_url not in seen_urls[category]:
+                        seen_urls[category].add(full_url)
                         links[category].append({
                             "text": a.get_text().strip(),
                             "url": full_url
                         })
                     categorized = True
                     break
+
+            if not categorized and full_url not in seen_urls["other"]:
+                seen_urls["other"].add(full_url)
+                links["other"].append({
+                    "text": a.get_text().strip(),
+                    "url": full_url
+                })
         
         # Limit results
         for category in links:
@@ -511,12 +603,12 @@ class SalesBrain:
         return links
     
     def _get_main_text(self, soup: BeautifulSoup) -> str:
-        """Extract main text content."""
-        # Remove script and style elements
-        for element in soup(['script', 'style', 'nav', 'footer', 'header']):
+        """Extract main text content (operates on a copy to avoid mutating the original soup)."""
+        soup_copy = copy(soup)
+        for element in soup_copy(['script', 'style', 'nav', 'footer', 'header']):
             element.decompose()
         
-        text = soup.get_text(separator=' ', strip=True)
+        text = soup_copy.get_text(separator=' ', strip=True)
         # Clean up whitespace
         text = re.sub(r'\s+', ' ', text)
         return text[:5000]  # Limit to first 5000 chars
@@ -607,7 +699,7 @@ class SalesBrain:
         print(f"✅ Saved: {product_file}")
         return product_file
     
-    def load_company(self) -> str:
+    def load_company(self) -> str | None:
         """Load existing company.md if it exists."""
         if self.company_file.exists():
             return self.company_file.read_text(encoding='utf-8')

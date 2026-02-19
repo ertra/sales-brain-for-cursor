@@ -21,6 +21,9 @@ Thumbs.db
 # Project specific - uncomment if you don't want to track research output
 # company.md
 # products/*.md
+brains/outreach/
+docs_text/
+visuals/
 
 # Company research (keep private by default)
 */scraping.log

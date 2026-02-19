@@ -8,4 +8,5 @@ beautifulsoup4>=4.11.0
 lxml>=4.9.0
 
 # Optional: Bypass bot protections (Chrome TLS impersonation). Install with: pip install curl_cffi
-# curl_cffi>=0.5.0
+curl_cffi>=0.14.0
+
