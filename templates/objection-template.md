@@ -1,157 +1,80 @@
+---
+object_type: objection
+company: "{company-slug}"
+company_display_name: "{Company Name}"
+persona: "{persona-slug-or-common}"
+version: v1
+last_updated: "{date}"
+last_verified: "To be verified"
+confidence: medium
+source_urls:
+  - "{Primary source URL}"
+tags:
+  - sales-brain
+  - objections
+---
+
 # {Persona Name} - Objection Handling
 
-## Overview
-Common objections from {Persona Name} and how to handle them.
+## Overview (Required)
+Common objections from {Persona Name} and how to handle them with evidence.
 
-## Objections
+## Objection Plays (Required)
 
 ### 1. {Objection Category}: "{Exact objection}"
-
-**Why They Say This**:
-{Root cause of this objection - what's really behind it}
-
-**Acknowledge**:
-"{Empathetic acknowledgment of their concern}"
-
-**Respond**:
-"{Your response}"
-
-**Proof Point**:
-- {Data or evidence to support your response}
-- {Customer example}
-
-**Follow-Up Question**:
-"{Question to continue the conversation}"
-
----
+- **Why They Say This**: {Root cause}
+- **Acknowledge**: "{Empathetic acknowledgment}"
+- **Respond**: "{Response}"
+- **Proof Point**: {Data or customer evidence}
+- **Follow-Up Question**: "{Question}"
 
 ### 2. Price/Budget: "{We don't have the budget}"
-
-**Why They Say This**:
-{Often means value isn't clear, or not a priority, or genuine budget constraint}
-
-**Acknowledge**:
-"{Empathetic acknowledgment}"
-
-**Respond**:
-"{Your response - focus on ROI and cost of inaction}"
-
-**Proof Point**:
-- {ROI data}
-- {Customer savings example}
-
-**Follow-Up Question**:
-"{Question to understand budget reality}"
-
----
+- **Why They Say This**: {Root cause}
+- **Acknowledge**: "{Empathetic acknowledgment}"
+- **Respond**: "{ROI and cost-of-inaction response}"
+- **Proof Point**: {Evidence}
+- **Follow-Up Question**: "{Question}"
 
 ### 3. Timing: "{Not the right time}"
+- **Why They Say This**: {Root cause}
+- **Acknowledge**: "{Empathetic acknowledgment}"
+- **Respond**: "{Cost of delay response}"
+- **Proof Point**: {Evidence}
+- **Follow-Up Question**: "{Question}"
 
-**Why They Say This**:
-{Other priorities, not urgent enough, or avoiding decision}
+## Evidence & Sources (Required)
+- **Claim**: {Proof claim} | **Source**: {label/url} | **Date**: {date or To be verified}
+- **Claim**: {Proof claim} | **Source**: {label/url} | **Date**: {date or To be verified}
 
-**Acknowledge**:
-"{Empathetic acknowledgment}"
-
-**Respond**:
-"{Your response - focus on cost of delay}"
-
-**Proof Point**:
-- {Impact of waiting}
-- {Customer who wished they started sooner}
-
-**Follow-Up Question**:
-"{Question to understand their timeline}"
-
----
-
-### 4. Competition: "{We're looking at {Competitor}}"
-
-**Why They Say This**:
-{Doing due diligence, or have existing relationship, or see value in alternative}
-
-**Acknowledge**:
-"{Empathetic acknowledgment - never badmouth competitor}"
-
-**Respond**:
-"{Your response - focus on differentiation}"
-
-**Proof Point**:
-- {Why customers chose us over them}
-- {Key differentiator}
-
-**Follow-Up Question**:
-"{Question to understand what they value}"
-
----
-
-### 5. Status Quo: "{We're fine with what we have}"
-
-**Why They Say This**:
-{Change is hard, don't see the problem, or comfortable with current solution}
-
-**Acknowledge**:
-"{Empathetic acknowledgment}"
-
-**Respond**:
-"{Your response - paint picture of what they're missing}"
-
-**Proof Point**:
-- {Cost of status quo}
-- {What competitors are doing}
-
-**Follow-Up Question**:
-"{Question to uncover hidden pain}"
-
----
-
-### 6. Authority: "{I need to check with my boss/team}"
-
-**Why They Say This**:
-{Genuine need for buy-in, or using as delay tactic}
-
-**Acknowledge**:
-"{Empathetic acknowledgment}"
-
-**Respond**:
-"{Your response - offer to help them sell internally}"
-
-**Proof Point**:
-- {Materials that help them make the case}
-- {Executive summary or ROI calculator}
-
-**Follow-Up Question**:
-"{Question to understand the buying process}"
-
----
-
-## Objection Prevention
-
+## Operator Guidance (Required)
 ### Questions to Ask Early
-Prevent objections by asking these questions upfront:
+1. {Budget question}
+2. {Timeline question}
+3. {Decision process question}
+4. {Competitive landscape question}
 
-1. "{Question about budget}"
-2. "{Question about timeline}"
-3. "{Question about decision process}"
-4. "{Question about other solutions}"
+### Disqualification Criteria
+- {No decision process}
+- {No champion or owner}
 
-### Red Flags to Watch For
-Signs that objections are coming:
+### Talk Tracks
+- **15s**: {Short rebuttal framing}
+- **30s**: {Structured response}
+- **2min**: {Full objection handling narrative}
 
-- {Red flag 1}
-- {Red flag 2}
-- {Red flag 3}
+### Next-Step CTA
+- {CTA}
 
-## Quick Reference
-
+## Quick Reference (Required)
 | Objection Type | Key Response | Proof Point |
 |----------------|--------------|-------------|
 | Price | {One-liner} | {Evidence} |
 | Timing | {One-liner} | {Evidence} |
 | Competition | {One-liner} | {Evidence} |
 | Status Quo | {One-liner} | {Evidence} |
-| Authority | {One-liner} | {Evidence} |
 
----
-*Last updated: {date}*
-*Generated by Sales Brain*
+## Cross-References (Required)
+- **Personas**: {links}
+- **Competitors**: {links}
+- **Case Studies**: {links}
+- **Sales Plays**: {links}

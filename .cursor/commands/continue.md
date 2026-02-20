@@ -20,6 +20,10 @@ If the user runs `/continue` without a company name:
 
 When a valid company name is provided:
 
+## Continue Mode Scope
+
+`/continue {company}` runs one phase at a time. It must not auto-run all remaining phases.
+
 ### Step 1: Verify Company Directory Exists
 
 Check if `brains/{company-slug}/` directory exists.
@@ -82,8 +86,28 @@ Run the appropriate phase using the workflow from `.cursor/rules/workflow/RULE.m
 
 Remember to use Python scraping:
 ```bash
-python .cursor/rules/sales-brain/scripts/scrape.py scrape <url>
+python .cursor/rules/sales-brain/scripts/scrape.py scrape <url> -d brains/{company}/
 ```
+
+When creating/updating files during continued phases, enforce `templates/V1-CONTRACT.md`:
+- required frontmatter
+- required `Evidence & Sources`, `Operator Guidance`, `Cross-References`
+- unsupported claims must be `To be verified`
+
+### Step 6: Mandatory Post-Phase Review Gate
+
+After phase execution, always pause and ask the user to choose:
+
+- `Continue to next phase`
+- `Update this phase now`
+- `Stop for now`
+
+If user chooses `Update this phase now`, update outputs for the same phase, then ask again.
+Only run the next phase after explicit `Continue to next phase`.
+
+Use this canonical prompt:
+
+`Review complete phase output? Choose: [Continue to next phase] [Update this phase now] [Stop for now]`
 
 ## Error Messages
 

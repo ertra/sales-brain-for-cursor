@@ -34,15 +34,15 @@ Example: /add competitor outreach
 
 3. **🔍 SCRAPE COMPETITOR WEBSITE DIRECTLY**:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com/products
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com/pricing
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com -d brains/{company}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com/products -d brains/{company}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com/pricing -d brains/{company}/
    ```
 
 4. **🔍 SCRAPE comparison pages**:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/vs-competitor
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/compare/company-vs-competitor
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/vs-competitor -d brains/{company}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/compare/company-vs-competitor -d brains/{company}/
    ```
 
 5. **Ask for competitive details**:
@@ -67,7 +67,8 @@ Example: /add competitor outreach
 
 ## Template
 
-Use `templates/competitor-template.md` for structure.
+Use `templates/V1-CONTRACT.md` and `templates/competitor-template.md` for structure.
+Require frontmatter + `Evidence & Sources` + `Operator Guidance` + `Cross-References`.
 
 ## Important
 

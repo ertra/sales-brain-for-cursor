@@ -32,8 +32,8 @@ Example: /add case-study outreach
 
 2. **🔍 SCRAPE** customer stories:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/customers
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/case-studies/{customer}
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/customers -d brains/{company}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/case-studies/{customer} -d brains/{company}/
    ```
 
 3. **Ask for case study details**:
@@ -59,7 +59,8 @@ Example: /add case-study outreach
 
 ## Template
 
-Use `templates/case-study-template.md` for structure.
+Use `templates/V1-CONTRACT.md` and `templates/case-study-template.md` for structure.
+Require frontmatter + `Evidence & Sources` + `Operator Guidance` + `Cross-References`.
 
 ## Important
 

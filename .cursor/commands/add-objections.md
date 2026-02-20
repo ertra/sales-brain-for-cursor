@@ -36,8 +36,8 @@ Example: /add objections outreach
 
 3. **🔍 SCRAPE** for objections:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/{company}/reviews
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/faq
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/{company}/reviews -d brains/{company}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/faq -d brains/{company}/
    ```
 
 4. **Ask for objection details**:
@@ -61,7 +61,8 @@ Example: /add objections outreach
 
 ## Template
 
-Use `templates/objection-template.md` for structure.
+Use `templates/V1-CONTRACT.md` and `templates/objection-template.md` for structure.
+Require frontmatter + `Evidence & Sources` + `Operator Guidance` + `Cross-References`.
 
 ## Objection Categories
 

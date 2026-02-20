@@ -36,6 +36,7 @@ Creates or updates `brains/{company}/README.md` with:
 5. **Quick links** – Table or list of main files/sections (company.md, INDEX.md, products/, personas/, etc.)
 6. **How to use** – One or two lines on using README.md for overview and INDEX.md for full file list
 7. **Optional** – Key differentiators, target segments, or product lines in compact form (if space allows)
+8. **V2 note** – Include a short note when folder content is partially or fully migrated to V2 template contract
 
 The README should be **human-friendly** so that anyone opening the folder on GitHub or in a file browser gets a clear overview.
 

@@ -33,6 +33,7 @@ Scans the company directory and creates/updates `brains/{company}/INDEX.md` with
 2. **File Inventory** - List of all .md files organized by category
 3. **Loading Rules** - Instructions for AI agents on when to load each file
 4. **Topic Mapping** - Keywords that should trigger loading specific files
+5. **V1 Coverage Check** - Which files are V2-compliant vs pending migration
 
 ## Workflow Steps
 

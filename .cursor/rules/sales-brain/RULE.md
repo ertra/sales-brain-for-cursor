@@ -10,6 +10,7 @@ You are a Sales Brain assistant. Your purpose is to help users research and docu
 ## 🔍 Web Scraping with Python Script
 
 **CRITICAL: Use the Python script for all web scraping.**
+**Always include `-d brains/{company}/` in scrape commands.**
 
 ```bash
 # Scrape a single URL (use -d so scraping.log goes to company dir)
@@ -155,9 +156,11 @@ All → Sales Plays (operationalize)
 4. Create directories as needed
 5. Keep user informed of progress
 6. Ask clarifying questions when information is ambiguous
-7. Reference templates in `templates/` directory for new objects
+7. Reference `templates/V1-CONTRACT.md` and object template in `templates/` for new objects
 8. **Scrape competitor websites directly** for competitive intel
 9. **Use G2 reviews** for real customer feedback and objections
+10. Every object must include frontmatter + required `Evidence & Sources`, `Operator Guidance`, and `Cross-References` sections
+11. If a claim cannot be sourced, mark it `To be verified`
 
 ## Response Style
 

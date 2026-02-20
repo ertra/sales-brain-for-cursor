@@ -32,8 +32,8 @@ Example: /add use-case outreach
 
 2. **🔍 SCRAPE** for use cases:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/use-cases
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/solutions
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/use-cases -d brains/{company}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/solutions -d brains/{company}/
    ```
 
 3. **Ask for use case details**:
@@ -59,4 +59,5 @@ Example: /add use-case outreach
 
 ## Template
 
-Use `templates/use-case-template.md` for structure.
+Use `templates/V1-CONTRACT.md` and `templates/use-case-template.md` for structure.
+Require frontmatter + `Evidence & Sources` + `Operator Guidance` + `Cross-References`.

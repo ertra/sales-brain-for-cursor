@@ -5,6 +5,27 @@ alwaysApply: true
 
 # Sales Brain Workflow (11 Phases)
 
+## Mandatory Phase-End Review Gate (Phases 1-11)
+
+After completing any phase output, do not auto-advance. Always run this gate:
+
+1. Present the phase summary and files created/updated.
+2. Ask the user to choose exactly one option:
+   - `Continue to next phase`
+   - `Update this phase now`
+   - `Stop for now`
+3. If user chooses `Update this phase now`:
+   - Collect requested changes.
+   - Update phase outputs.
+   - Re-present the same phase summary.
+   - Ask the same 3-option gate again.
+4. Only proceed to the next phase when user explicitly chooses `Continue to next phase`.
+5. If user chooses `Stop for now`, end the run and direct them to `/continue {company}`.
+
+Use this canonical prompt after every phase:
+
+`Review complete phase output? Choose: [Continue to next phase] [Update this phase now] [Stop for now]`
+
 ## Web Scraping with Python Script
 
 **USE THE PYTHON SCRIPT** for all web scraping throughout the workflow:
@@ -66,8 +87,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 4. Create `brains/{company-slug}/company.md` with structured company information
 
 5. Present findings and ask user to confirm accuracy
-   - If confirmed → proceed to Phase 2
-   - If not confirmed → ask what to change, update file, re-confirm
+   - Run the mandatory phase-end review gate
 
 ## Phase 2: Product Detection
 
@@ -81,6 +101,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 2. Create `brains/{company-slug}/products/` directory if it doesn't exist
 3. For each product, create `brains/{company-slug}/products/{product-slug}.md`
 4. Present product summaries to user
+5. Run the mandatory phase-end review gate
 
 ## Phase 3: Target Companies Research
 
@@ -98,6 +119,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
    - Common challenges they face
 
 3. Create `brains/{company-slug}/target-companies.md` with structured information
+4. Run the mandatory phase-end review gate
 
 ## Phase 4: Persona Research
 
@@ -120,6 +142,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 4. Create `brains/{company-slug}/personas/` directory if it doesn't exist
 5. For each persona, create `brains/{company-slug}/personas/{persona-slug}.md`
 6. Present persona summaries to user
+7. Run the mandatory phase-end review gate
 
 ## Phase 5: Pain Points Deep Dive
 
@@ -138,6 +161,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 
 3. Create `brains/{company-slug}/pain-points/` directory if it doesn't exist
 4. For each persona, create `brains/{company-slug}/pain-points/{persona-slug}-pain-points.md`
+5. Run the mandatory phase-end review gate
 
 ## Phase 6: Value Propositions
 
@@ -157,6 +181,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 
 3. Create `brains/{company-slug}/value-propositions/` directory if it doesn't exist
 4. Create `brains/{company-slug}/value-propositions/{product-slug}-{persona-slug}.md` files
+5. Run the mandatory phase-end review gate
 
 ## Phase 7: Use Cases
 
@@ -176,6 +201,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 
 3. Create `brains/{company-slug}/use-cases/` directory if it doesn't exist
 4. Create `brains/{company-slug}/use-cases/{use-case-slug}.md` files
+5. Run the mandatory phase-end review gate
 
 ## Phase 8: Competitive Intelligence
 
@@ -201,6 +227,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 
 4. Create `brains/{company-slug}/competitors/` directory if it doesn't exist
 5. Create `brains/{company-slug}/competitors/{competitor-slug}.md` files
+6. Run the mandatory phase-end review gate
 
 ## Phase 9: Objection Handling
 
@@ -219,6 +246,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 
 3. Create `brains/{company-slug}/objections/` directory if it doesn't exist
 4. Create `brains/{company-slug}/objections/{persona-slug}-objections.md` files
+5. Run the mandatory phase-end review gate
 
 ## Phase 10: Case Studies
 
@@ -238,6 +266,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 
 3. Create `brains/{company-slug}/case-studies/` directory if it doesn't exist
 4. Create `brains/{company-slug}/case-studies/{customer-slug}.md` files
+5. Run the mandatory phase-end review gate
 
 ## Phase 11: Sales Plays
 
@@ -251,6 +280,7 @@ python .cursor/rules/sales-brain/scripts/scrape.py load-scraped -d brains/{compa
 
 3. Create `brains/{company-slug}/sales-plays/` directory if it doesn't exist
 4. Create `brains/{company-slug}/sales-plays/{play-slug}.md` files
+5. Run the mandatory phase-end review gate
 
 ## Final Step: Generate INDEX.md and README.md
 
@@ -274,6 +304,7 @@ After completing all 11 phases, **automatically generate context files**:
    - Omit rows for sections that don't exist
 
 3. Show completion summary
+4. Run the mandatory phase-end review gate for this final step
 
 README.md is shown by default on GitHub and in file browsers; INDEX.md helps AI agents load context efficiently.
 
@@ -286,3 +317,22 @@ README.md is shown by default on GitHub and in file browsers; INDEX.md helps AI 
 5. **Save time** - Scraping provides 80% of info, user validates 20%
 6. **Handle failures** - If scraping fails, fall back to asking user
 7. **Check scraping.txt** - Track pages scraped count in company directory
+
+## Dry-Run Validation Scenarios (Doc-Level)
+
+Use these checks when reviewing command/rule behavior:
+
+1. **New company via `/start`**
+   - Confirm company name + website are collected before any scraping.
+   - Confirm each completed phase presents the mandatory review gate.
+   - Confirm progression only happens after explicit `Continue to next phase`.
+
+2. **Mid-workflow via `/continue {company}`**
+   - Confirm a single phase is selected and executed.
+   - Confirm post-phase gate is shown with continue/update/stop.
+   - Confirm no automatic multi-phase progression.
+
+3. **Update loop behavior**
+   - Confirm `Update this phase now` keeps user in same phase.
+   - Confirm updated outputs are re-presented.
+   - Confirm next phase starts only after explicit continue.

@@ -2,6 +2,30 @@
 
 When the user types `/start`, begin the Sales Brain research workflow.
 
+## Step 0 (Strict): Collect Inputs Before Any Scraping
+
+Before running any phase or scrape command, collect and confirm:
+
+1. Company name
+2. Website URL
+
+Do not scrape or create files until both values are confirmed.
+
+## Mandatory Phase-End Review Gate (Phases 1-11)
+
+After each phase output, always pause and ask the user to choose one option:
+
+- `Continue to next phase`
+- `Update this phase now`
+- `Stop for now`
+
+If user chooses `Update this phase now`, update phase outputs and re-run the same gate.
+Do not auto-advance to the next phase unless user explicitly chooses `Continue to next phase`.
+
+Use this canonical prompt:
+
+`Review complete phase output? Choose: [Continue to next phase] [Update this phase now] [Stop for now]`
+
 ## 🔍 SCRAPING WITH PYTHON SCRIPT
 
 **Use the Python script for all web scraping:**
@@ -21,6 +45,14 @@ The script extracts: title, description, headings, links, and text content.
 The `-d` flag specifies where to write `scraping.log`.
 
 **Strategy**: Scrape first, validate with user second.
+
+## V1 Output Requirements (Mandatory)
+
+For every object created in this workflow, enforce `templates/V1-CONTRACT.md`:
+
+- Include YAML frontmatter (`object_type`, `company`, `version`, `last_updated`, `last_verified`, `confidence`, `source_urls`, `tags`).
+- Include required sections: `Overview`, `Evidence & Sources`, `Operator Guidance`, `Cross-References`.
+- If proof is missing, write `To be verified` instead of inventing metrics.
 
 ## Use existing scraped data first
 
@@ -62,7 +94,7 @@ brains/{company-slug}/
 ## Full Workflow (11 Phases)
 
 ### Phase 1: Company Research
-1. **Ask for**: Company name + Website URL
+1. **Ask for**: Company name + Website URL (strictly before any scraping)
 2. **Create directory**: `brains/{company-slug}/`
 3. **🔍 SCRAPE** using Python:
    ```bash
@@ -71,32 +103,39 @@ brains/{company-slug}/
    ```
 4. **Create** `brains/{company-slug}/company.md`
 5. **Present findings** and ask for confirmation
+6. **Run mandatory phase-end review gate** (continue/update/stop)
 
 ### Phase 2: Product Detection
 - **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/products -d brains/{company-slug}/`
 - Create `brains/{company-slug}/products/{product-slug}.md` files
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Phase 3: Target Companies
 - **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/customers -d brains/{company-slug}/`
 - Ask user for additional context
 - Create `brains/{company-slug}/target-companies.md`
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Phase 4: Personas
 - **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/solutions -d brains/{company-slug}/`
 - Ask user to identify personas
 - Create `brains/{company-slug}/personas/{persona-slug}.md` files
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Phase 5: Pain Points
 - **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/company/reviews -d brains/{company-slug}/`
 - Create `brains/{company-slug}/pain-points/{persona}-pain-points.md` files
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Phase 6: Value Propositions
 - **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/roi -d brains/{company-slug}/`
 - Create `brains/{company-slug}/value-propositions/{product}-{persona}.md` files
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Phase 7: Use Cases
 - **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/case-studies -d brains/{company-slug}/`
 - Create `brains/{company-slug}/use-cases/{use-case}.md` files
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Phase 8: Competitive Intelligence
 - **🔍 SCRAPE COMPETITOR WEBSITES**:
@@ -105,23 +144,28 @@ brains/{company-slug}/
   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://competitor.com/products -d brains/{company-slug}/
   ```
 - Create `brains/{company-slug}/competitors/{competitor}.md` files
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Phase 9: Objection Handling
 - **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/company/reviews -d brains/{company-slug}/`
 - Create `brains/{company-slug}/objections/{persona}-objections.md` files
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Phase 10: Case Studies
 - **🔍 SCRAPE**: `python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/customers/story -d brains/{company-slug}/`
 - Create `brains/{company-slug}/case-studies/{customer}.md` files
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Phase 11: Sales Plays
 - **Synthesize** all gathered information
 - Create `brains/{company-slug}/sales-plays/{play}.md` files
+- Run mandatory phase-end review gate (continue/update/stop)
 
 ### Final Step: Generate INDEX.md and README.md
 - **Auto-generate** `brains/{company-slug}/INDEX.md` - File inventory, loading rules
 - **Auto-generate** `brains/{company-slug}/README.md` - Human-friendly overview (GitHub/file browser default)
 - README helps humans; INDEX helps AI agents load context efficiently
+- Run mandatory phase-end review gate for final output
 
 ## Scraping Checklist by Phase
 

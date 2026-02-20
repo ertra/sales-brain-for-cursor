@@ -46,7 +46,7 @@ Available companies:
 
 3. **🔍 SCRAPE** product page if URL provided:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/products/new-product
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/products/new-product -d brains/{company}/
    ```
 
 4. **Create `brains/{company}/products/` directory** if it doesn't exist
@@ -62,4 +62,5 @@ Available companies:
 
 ## Template
 
-Use `templates/product-template.md` for structure.
+Use `templates/V1-CONTRACT.md` and `templates/product-template.md` for structure.
+Require frontmatter + `Evidence & Sources` + `Operator Guidance` + `Cross-References`.

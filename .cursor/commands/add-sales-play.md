@@ -63,7 +63,8 @@ Example: /add sales-play outreach
 
 ## Template
 
-Use `templates/sales-play-template.md` for structure.
+Use `templates/V1-CONTRACT.md` and `templates/sales-play-template.md` for structure.
+Require frontmatter + `Evidence & Sources` + `Operator Guidance` + `Cross-References`.
 
 ## Common Sales Play Types
 

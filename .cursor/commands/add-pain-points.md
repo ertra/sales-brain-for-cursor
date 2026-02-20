@@ -37,8 +37,8 @@ Example: /add pain-points outreach
 
 3. **🔍 SCRAPE** for pain points:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/{company}/reviews
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/challenges
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://g2.com/products/{company}/reviews -d brains/{company}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/challenges -d brains/{company}/
    ```
 
 4. **Ask for pain point details**:
@@ -61,4 +61,5 @@ Example: /add pain-points outreach
 
 ## Template
 
-Use `templates/pain-points-template.md` for structure.
+Use `templates/V1-CONTRACT.md` and `templates/pain-points-template.md` for structure.
+Require frontmatter + `Evidence & Sources` + `Operator Guidance` + `Cross-References`.

@@ -40,8 +40,8 @@ Example: /add value-prop outreach
 
 4. **🔍 SCRAPE** for value messaging:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/roi
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/value
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/roi -d brains/{company}/
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/value -d brains/{company}/
    ```
 
 5. **Ask for value proposition details**:
@@ -64,4 +64,5 @@ Example: /add value-prop outreach
 
 ## Template
 
-Use `templates/value-proposition-template.md` for structure.
+Use `templates/V1-CONTRACT.md` and `templates/value-proposition-template.md` for structure.
+Require frontmatter + `Evidence & Sources` + `Operator Guidance` + `Cross-References`.

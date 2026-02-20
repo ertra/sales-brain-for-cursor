@@ -47,7 +47,7 @@ Available companies:
 
 3. **🔍 SCRAPE** if persona page exists:
    ```bash
-   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/solutions/for-sales-leaders
+   python .cursor/rules/sales-brain/scripts/scrape.py scrape https://company.com/solutions/for-sales-leaders -d brains/{company}/
    ```
 
 4. **Create `brains/{company}/personas/` directory** if it doesn't exist
@@ -64,4 +64,5 @@ Available companies:
 
 - Personas are GENERIC - they work for any target company
 - Do NOT include a specific "Company" field in the persona file
-- Use `templates/persona-template.md` for structure
+- Use `templates/V1-CONTRACT.md` and `templates/persona-template.md` for structure
+- Require frontmatter + `Evidence & Sources` + `Operator Guidance` + `Cross-References`
