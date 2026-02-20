@@ -34,7 +34,6 @@ Use this checklist for each company folder under `brains/`.
 
 ## README/INDEX Checks
 
-- [ ] `README.md` includes V1 migration status note.
 - [ ] `INDEX.md` includes V1 loading note.
 
 ## Workflow Gate Checks (/start and /continue)
