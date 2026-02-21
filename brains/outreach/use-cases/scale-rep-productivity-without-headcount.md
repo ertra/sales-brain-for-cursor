@@ -1,21 +1,16 @@
 ---
 object_type: use-case
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 use_case: scale-rep-productivity-without-headcount
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - use-case
 ---
-
 # Use Case: Scale Rep Productivity Without Headcount
 
 ## Overview
@@ -49,23 +44,6 @@ Revenue teams need more output from existing sellers. This use case addresses re
 - **Claim**: Outreach claims up to 60% seller productivity increase through AI-driven workflows. | **Source**: Outreach homepage/platform (`https://www.outreach.io/`, `https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Customer stories listing includes +25% meetings booked and +66% positive email reply outcomes. | **Source**: Outreach customers (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. What percentage of rep time is non-selling admin today?
-2. Which conversion step is weakest: reply, meeting, or qualified opportunity?
-3. How much rep-to-rep execution variance exists on your team?
-
-### Disqualification Criteria
-- No measurable KPI ownership for rep productivity.
-- No willingness to standardize outreach workflow behaviors.
-
-### Talk Tracks
-- **15s**: Outreach helps teams raise seller output without adding proportional headcount.
-- **30s**: If reps are overloaded, Outreach uses structured engagement and AI assistance to convert more effort into pipeline outcomes.
-- **2min**: Productivity constraints usually come from process inconsistency and repetitive manual work, not effort. Outreach positions a workflow model where reps can execute faster with better guidance, while managers and RevOps maintain consistency across the team.
-
-### Next-Step CTA
-- Launch a productivity pilot on one outbound segment with pre/post KPI scorecard.
 
 ## Demo Focus (Optional)
 - Sequence execution and automation triggers

@@ -6,8 +6,6 @@ version: v1
 last_updated: "{date}"
 last_verified: "To be verified"
 confidence: medium
-source_urls:
-  - "{Primary source URL}"
 tags:
   - sales-brain
   - sales-play
@@ -51,7 +49,8 @@ tags:
 | "{Objection 2}" | {Response} |
 | "{Objection 3}" | {Response} |
 
-## Evidence & Sources (Required)
+## Evidence & Sources (Optional)
+Include only when there are actual sourced claims.
 - **Claim**: {Play performance or supporting proof} | **Source**: {label/url} | **Date**: {date or To be verified}
 - **Claim**: {Play performance or supporting proof} | **Source**: {label/url} | **Date**: {date or To be verified}
 
@@ -64,7 +63,8 @@ tags:
 | Average deal size | {$X} |
 | Sales cycle | {X days} |
 
-## Cross-References (Required)
+## Cross-References (Optional)
+Include only when there are actual links to related files.
 - **Personas**: {links}
 - **Pain Points**: {links}
 - **Value Propositions**: {links}

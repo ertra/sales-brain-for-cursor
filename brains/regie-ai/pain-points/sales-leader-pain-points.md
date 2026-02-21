@@ -1,19 +1,16 @@
 ---
 object_type: pain-points
 company: regie-ai
-company_display_name: Regie.ai
+company_display_name: "Regie Ai"
 persona: sales-leader
 version: v1
 last_updated: 2026-02-20
 last_verified: To be verified
 confidence: medium
-source_urls:
-  - https://www.regie.ai/
 tags:
   - sales-brain
   - pain-points
 ---
-
 # Sales Leader - Pain Points
 
 ## Overview
@@ -58,24 +55,6 @@ Sales leaders struggle to scale outbound pipeline while maintaining quality and 
 - Claim: Regie.ai positions AI agents for prospecting automation | Source: company.md | Date: To be verified
 - Claim: Regie.ai emphasizes consolidation into one AI SEP platform | Source: company.md | Date: To be verified
 
-## Operator Guidance
-### Discovery Questions
-1. How much rep time goes to research and message writing?
-2. Where do you see quality variance in outbound messaging?
-3. Which systems are hardest to keep aligned for outbound execution?
-
-### Disqualification Criteria
-- No measurable pain from outbound productivity
-- No priority to improve outbound quality or consistency
-
-### Talk Tracks
-- 15s: Regie.ai helps leaders scale quality pipeline without adding headcount.
-- 30s: Automate repetitive prospecting tasks and standardize stronger outreach execution.
-- 2min: Replace fragmented outbound workflows with one AI-native engagement system that improves productivity and quality.
-
-### Next-Step CTA
-- Baseline current pipeline productivity and reply metrics.
-- Select one team and motion for pilot validation.
 
 ## Cross-References
 - Related persona: `../personas/sales-leader.md`

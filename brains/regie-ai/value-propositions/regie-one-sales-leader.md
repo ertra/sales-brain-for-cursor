@@ -1,20 +1,17 @@
 ---
 object_type: value-proposition
 company: regie-ai
-company_display_name: Regie.ai
+company_display_name: "Regie Ai"
 product: regie-one
 persona: sales-leader
 version: v1
 last_updated: 2026-02-20
 last_verified: To be verified
 confidence: medium
-source_urls:
-  - https://www.regie.ai/regie-one
 tags:
   - sales-brain
   - value-proposition
 ---
-
 # RegieOne -> Sales Leader Value Proposition
 
 ## Overview
@@ -52,24 +49,6 @@ RegieOne helps sales leaders increase pipeline output by combining AI agents and
 - Claim: Regie.ai frames 3-5x reach without proportional headcount | Source: company.md | Date: To be verified
 - Claim: Customer stories highlight pipeline impact outcomes | Source: target-companies.md | Date: To be verified
 
-## Operator Guidance
-### Discovery Questions
-1. What pipeline gap must your team close this quarter?
-2. What percent of rep day is non-selling work?
-3. How are you measuring outbound quality today?
-
-### Disqualification Criteria
-- No outbound-led growth motion
-- No clear owner for pipeline productivity initiative
-
-### Talk Tracks
-- 15s: RegieOne helps sales leaders scale quality pipeline without adding headcount.
-- 30s: Unify AI agents and reps to automate prospecting and improve outbound consistency.
-- 2min: RegieOne replaces fragmented engagement tooling with one AI-native system to improve pipeline velocity and sales productivity.
-
-### Next-Step CTA
-- Align on baseline metrics and pilot scope.
-- Schedule joint review with sales leadership and RevOps.
 
 ## Messaging Framework
 - **Subject Lines**: Increase pipeline with AI-native engagement; Reduce prospecting drag for reps

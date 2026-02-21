@@ -1,21 +1,16 @@
 ---
 object_type: pain-points
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: customer-success-manager
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://g2.com/products/outreach/reviews
 tags:
   - sales-brain
   - pain-points
 ---
-
 # Customer Success Manager - Pain Points
 
 ## Overview
@@ -62,23 +57,6 @@ Customer Success Managers are measured on renewal and expansion outcomes but oft
 - **Claim**: Outreach platform role messaging for Customer Success focuses on reducing redundant conversations and delivering required business outcomes to secure renewal. | **Source**: Outreach platform page (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: G2 review page could not be scraped due to 403; third-party evidence is `To be verified`. | **Source**: G2 Outreach reviews (`https://g2.com/products/outreach/reviews`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. How early can your team reliably identify churn risk by account tier?
-2. What is usually missing from sales-to-CS handoff context?
-3. How are expansion plays triggered and prioritized today?
-
-### Disqualification Criteria
-- No ownership of renewal or expansion KPIs.
-- No cross-functional willingness to align sales and CS account workflows.
-
-### Talk Tracks
-- **15s**: Outreach helps CSMs reduce churn risk with earlier signals and better account context.
-- **30s**: If renewals are reactive, Outreach aligns account workflows across teams to help CSMs intervene earlier and expand smarter.
-- **2min**: CS teams often know outcomes are at risk but discover it too late because signals and context are fragmented. Outreach positions a connected workflow model so account insights, conversation context, and next-step actions are easier to operationalize. This reduces redundant customer interactions and improves renewal planning discipline. We can validate fit by measuring risk-detection timing, handoff quality, and expansion conversion.
-
-### Next-Step CTA
-- Audit the last 10 at-risk renewals to map early signals that were missed.
 
 ## Trigger Events
 - Churn uptick in key segments.

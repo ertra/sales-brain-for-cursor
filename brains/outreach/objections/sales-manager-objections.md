@@ -1,20 +1,16 @@
 ---
 object_type: objection
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: sales-manager
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
 tags:
   - sales-brain
   - objections
 ---
-
 # Sales Manager - Objection Handling
 
 ## Overview
@@ -47,24 +43,6 @@ Manager objections typically center on rep adoption, coaching overhead, and fear
 - **Claim**: Outreach platform highlights manager use cases around pipeline health and rep performance. | **Source**: Outreach platform (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Pricing package structure enables phased module rollout by team need. | **Source**: Outreach pricing (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Questions to Ask Early
-1. What coaching motions are currently hardest to scale?
-2. How is pipeline risk prioritized in weekly manager reviews?
-3. Which rep behaviors need most consistency?
-4. What KPI can manager pilots influence quickly?
-
-### Disqualification Criteria
-- Manager has no control over team process.
-- No measurable manager-level KPI baseline.
-
-### Talk Tracks
-- **15s**: This is a manager enablement rollout, not just a tool rollout.
-- **30s**: We tie usage to your existing coaching and inspection cadence to avoid extra admin.
-- **2min**: Managers usually reject tools that add process burden. By anchoring rollout to existing routines and one measurable KPI, this becomes a coaching and intervention accelerator rather than another dashboard.
-
-### Next-Step CTA
-- Define one manager pod pilot with coaching and pipeline-risk KPIs.
 
 ## Quick Reference
 | Objection Type | Key Response | Proof Point |

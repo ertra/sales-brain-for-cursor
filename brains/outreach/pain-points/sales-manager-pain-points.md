@@ -1,21 +1,16 @@
 ---
 object_type: pain-points
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: sales-manager
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/
-  - https://g2.com/products/outreach/reviews
 tags:
   - sales-brain
   - pain-points
 ---
-
 # Sales Manager - Pain Points
 
 ## Overview
@@ -62,23 +57,6 @@ Sales managers are accountable for rep performance and pipeline quality but ofte
 - **Claim**: Outreach highlights AI-driven conversation insights and coaching opportunities in real time. | **Source**: Outreach homepage (`https://www.outreach.io/`) | **Date**: 2026-02-20
 - **Claim**: Third-party review evidence from G2 could not be loaded due to 403. | **Source**: G2 Outreach reviews (`https://g2.com/products/outreach/reviews`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. How do managers currently prioritize which deals need intervention first?
-2. What percentage of reps receive consistent coaching every week?
-3. Which part of pipeline review is most manual and least actionable?
-
-### Disqualification Criteria
-- Manager does not own coaching and pipeline outcomes.
-- Team has no recurring deal/pipeline review process to optimize.
-
-### Talk Tracks
-- **15s**: Outreach helps sales managers coach smarter and act earlier on pipeline risk.
-- **30s**: If managers are overloaded, Outreach prioritizes deal and rep signals so they can focus attention where it moves outcomes most.
-- **2min**: Frontline managers are usually constrained by time and signal noise, not intent. Outreach connects call intelligence, deal movement, and forecast context so managers can diagnose risk sooner and coach with more precision. That shifts pipeline reviews from passive updates to concrete actions. We can validate by tracking intervention timing, coaching coverage, and team conversion lift.
-
-### Next-Step CTA
-- Pilot a manager operating cadence focused on risk-first deal inspection.
 
 ## Trigger Events
 - New manager cohort with coaching inconsistency.

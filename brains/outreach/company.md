@@ -1,20 +1,15 @@
 ---
 object_type: company
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/company/about
-  - https://www.builtinseattle.com/articles/outreach-seattle-headquarters
 tags:
   - sales-brain
   - company
 ---
-
 # Outreach
 
 ## Overview
@@ -66,26 +61,6 @@ Outreach is an AI revenue workflow platform for sales, marketing, revenue operat
 - **Claim**: Outreach reports customer proof points including "Amplitude saved over $600K per year" and "close over 2 million opportunities every month." | **Source**: Outreach homepage (`https://www.outreach.io/`) | **Date**: 2026-02-20
 - **Claim**: Outreach states it was started in early 2014 and reports $489M funding and a $4.4B valuation after Series G financing. | **Source**: Outreach About page (`https://www.outreach.io/company/about`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Which part of your current revenue workflow is most fragmented today: prospecting, deal execution, forecasting, or expansion?
-2. How much manager time is currently spent on forecast inspection and pipeline review each week?
-3. Where are reps losing productivity due to manual research, context switching, or weak process adherence?
-4. Which teams need shared visibility most urgently: sales, RevOps, marketing, or customer success?
-
-### Disqualification Criteria
-- No defined revenue process improvement initiative in the next 6-12 months.
-- Organization is fully standardized on a competing platform with strong internal adoption and no consolidation pressure.
-- No measurable KPI ownership for forecast accuracy, seller productivity, or deal velocity.
-
-### Talk Tracks
-- **15s**: Outreach helps revenue teams run prospecting, deals, forecasting, and coaching in one AI-powered workflow platform.
-- **30s**: If your reps and managers are juggling disconnected tools, Outreach consolidates execution workflows so teams spend more time selling, improve forecast confidence, and reduce process friction.
-- **2min**: Most teams we speak with have data and workflow sprawl: one tool for engagement, another for insights, another for forecast hygiene, and inconsistent manager coaching. Outreach positions a single AI revenue workflow platform that supports the entire execution cycle, from pipeline generation through deal management and expansion. The goal is to increase rep productivity, give leaders cleaner forecast visibility, and help RevOps standardize process. We can validate fit quickly by mapping your current workflow gaps, key KPIs, and where consolidation would create the biggest operational and financial impact.
-
-### Next-Step CTA Suggestions
-- Run a 45-minute workflow diagnostic covering current tool stack, forecast process, and rep execution bottlenecks.
-- Align on a KPI baseline (forecast accuracy, meeting-to-opportunity conversion, rep productivity) before solution deep dive.
 
 ## Cross-References
 - **Target Companies**: `brains/outreach/target-companies.md` (To be verified)

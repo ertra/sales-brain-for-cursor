@@ -7,8 +7,6 @@ version: v1
 last_updated: "{date}"
 last_verified: "To be verified"
 confidence: medium
-source_urls:
-  - "{Competitor URL}"
 tags:
   - sales-brain
   - competitor
@@ -58,29 +56,13 @@ tags:
 |-------------|---------|--------------|
 | "{Claim}" | {Reality} | {Response} |
 
-## Evidence & Sources (Required)
+## Evidence & Sources (Optional)
+Include only when there are actual sourced claims.
 - **Claim**: {Competitive claim} | **Source**: {label/url} | **Date**: {date or To be verified}
 - **Claim**: {Competitive claim} | **Source**: {label/url} | **Date**: {date or To be verified}
 
-## Operator Guidance (Required)
-### Trap-Setting Questions
-1. {Question}
-2. {Question}
-3. {Question}
-
-### Disqualification Criteria
-- {Bad fit for our positioning}
-- {Feature gap where competitor is stronger}
-
-### Talk Tracks
-- **15s**: {Positioning hook}
-- **30s**: {Differentiation summary}
-- **2min**: {Battlecard narrative}
-
-### Next-Step CTA
-- {CTA}
-
-## Cross-References (Required)
+## Cross-References (Optional)
+Include only when there are actual links to related files.
 - **Products**: {links}
 - **Value Propositions**: {links}
 - **Objections**: {links}

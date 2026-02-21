@@ -6,8 +6,6 @@ version: v1
 last_updated: "{date}"
 last_verified: "To be verified"
 confidence: medium
-source_urls:
-  - "{Primary source URL}"
 tags:
   - sales-brain
   - target-companies
@@ -36,25 +34,13 @@ tags:
 - **Common Challenges**: {Typical problems}
 - **Disqualify If**: {2-3 disqualifiers}
 
-## Evidence & Sources (Required)
+## Evidence & Sources (Optional)
+Include only when there are actual sourced claims.
 - **Claim**: {ICP evidence} | **Source**: {label/url} | **Date**: {date or To be verified}
 - **Claim**: {ICP evidence} | **Source**: {label/url} | **Date**: {date or To be verified}
 
-## Operator Guidance (Required)
-### Discovery Questions
-1. {Question}
-2. {Question}
-3. {Question}
-
-### Talk Tracks
-- **15s**: {Hook}
-- **30s**: {Segment fit framing}
-- **2min**: {ICP story}
-
-### Next-Step CTA
-- {CTA}
-
-## Cross-References (Required)
+## Cross-References (Optional)
+Include only when there are actual links to related files.
 - **Company**: {link}
 - **Personas**: {links}
 - **Use Cases**: {links}

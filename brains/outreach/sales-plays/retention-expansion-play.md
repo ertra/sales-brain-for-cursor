@@ -1,20 +1,15 @@
 ---
 object_type: sales-play
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - sales-play
 ---
-
 # Sales Play: Retention & Expansion Execution
 
 ## Play Overview

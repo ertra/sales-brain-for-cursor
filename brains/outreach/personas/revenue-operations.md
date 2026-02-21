@@ -1,20 +1,16 @@
 ---
 object_type: persona
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: revenue-operations
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
 tags:
   - sales-brain
   - persona
 ---
-
 # Revenue Operations
 
 ## Overview
@@ -52,24 +48,6 @@ Revenue Operations leaders own process integrity, pipeline governance, and syste
 - **Claim**: Outreach positions Revenue Operations use cases around finding and fixing leak, inefficiency, and risk in the sales funnel. | **Source**: Outreach platform solutions section (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Outreach packages deal, forecast, and engagement capabilities in one pricing structure, supporting tool consolidation motions. | **Source**: Outreach pricing page (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Where does your pipeline leak most today, and how is that measured?
-2. Which processes still require manual reconciliation across systems?
-3. What does leadership need from RevOps that is currently hard to deliver?
-
-### Disqualification Criteria
-- No RevOps ownership or mandate for process/system change.
-- No measurable operational baseline for pipeline or forecast outcomes.
-
-### Talk Tracks
-- **15s**: Outreach helps RevOps standardize revenue workflows and reduce leakage across the funnel.
-- **30s**: If your team is stitching together disconnected systems, Outreach unifies execution and forecasting workflows so RevOps can improve reliability and speed.
-- **2min**: RevOps teams often spend too much time reconciling data and not enough time improving process. Outreach provides one workflow platform spanning engagement, deal management, and forecasting, which reduces handoff friction and improves governance. The value shows up in better stage discipline, cleaner forecast prep, and faster issue detection. We can evaluate this against your leakage points, operational toil, and reporting cycle time.
-
-### Next-Step CTA
-- Map current funnel leakage by stage and identify top process breakdowns.
-- Define a phased consolidation plan tied to RevOps success metrics.
 
 ## Cross-References
 - **Pain Points**: `brains/outreach/pain-points/revenue-operations-pain-points.md`

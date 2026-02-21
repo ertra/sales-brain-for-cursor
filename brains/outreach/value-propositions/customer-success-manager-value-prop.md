@@ -1,22 +1,17 @@
 ---
 object_type: value-proposition
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 product: amplify
 persona: customer-success-manager
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - value-proposition
 ---
-
 # Outreach Amplify -> Customer Success Manager Value Proposition
 
 ## Overview
@@ -54,23 +49,6 @@ For CSMs, Outreach enables earlier renewal-risk detection and coordinated accoun
 - **Claim**: Outreach messaging includes retain-and-expand AI orchestration with early renewal risk flagging. | **Source**: Outreach homepage (`https://www.outreach.io/`) | **Date**: 2026-02-20
 - **Claim**: Customer Success role messaging focuses on alignment and delivering business outcomes to secure renewal. | **Source**: Outreach platform (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. How early is renewal risk surfaced for top-tier accounts?
-2. What account context is commonly lost at handoff?
-3. How are expansion plays triggered and measured today?
-
-### Disqualification Criteria
-- No CS ownership for retention/expansion outcomes.
-- No cross-functional collaboration on account execution.
-
-### Talk Tracks
-- **15s**: Outreach helps CSMs move from reactive renewals to proactive account orchestration.
-- **30s**: If your team catches churn risk too late, Outreach aligns account signals and actions so CSMs can intervene earlier and expand with better timing.
-- **2min**: CS effectiveness is constrained when account context is fragmented and risk signals are delayed. Outreach positions a workflow where sales and post-sales signals are connected, enabling proactive renewal management and more disciplined expansion execution. This reduces reactive firefighting and improves account predictability.
-
-### Next-Step CTA
-- Review recent at-risk renewals and map missed early-warning signals.
 
 ## Messaging Framework
 - **Subject Lines**: Catch renewal risk earlier; Improve CS account orchestration; Turn retention signals into action

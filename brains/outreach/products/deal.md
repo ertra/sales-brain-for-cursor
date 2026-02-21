@@ -1,20 +1,16 @@
 ---
 object_type: product
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 product: deal
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/platform
 tags:
   - sales-brain
   - product
 ---
-
 # Outreach Deal
 
 ## Overview
@@ -52,20 +48,6 @@ Packaged as a module with request-pricing model.
 - **Claim**: Deal package includes smart deal assist, deal health score, deal grid, and activity-history overview. | **Source**: Outreach pricing page (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 - **Claim**: Outreach states deal management and pipeline management are key capabilities on the platform. | **Source**: Outreach platform page (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Where do deals most often stall, and how early can your team identify that risk?
-2. How do managers currently inspect deal quality beyond CRM stage fields?
-3. What does your current deal review cadence miss that impacts forecast confidence?
-
-### Talk Tracks
-- **15s**: Deal gives sellers and managers a unified, AI-assisted view of opportunity health and progression.
-- **30s**: If deals are slipping due to late risk detection, Deal improves visibility and actionability so teams can intervene earlier and keep pipeline moving.
-- **2min**: Many teams have activity data but lack an operational deal execution layer that translates signals into action. Deal combines health scoring, unified activity context, and structured inspection workflows to surface risk earlier and prioritize what to do next. This supports both rep execution and manager coaching, especially in multi-stakeholder opportunities. We can validate this by analyzing your stall points, review process, and win/loss patterns.
-
-### Next-Step CTA
-- Run a recent-loss and slipped-deal analysis to identify top risk patterns.
-- Set up a pilot inspection cadence with standardized deal health criteria.
 
 ## Cross-References
 - **Personas**: `brains/outreach/personas/`

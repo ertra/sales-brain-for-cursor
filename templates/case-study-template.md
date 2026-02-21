@@ -6,8 +6,6 @@ version: v1
 last_updated: "{date}"
 last_verified: "To be verified"
 confidence: medium
-source_urls:
-  - "{Case study URL}"
 tags:
   - sales-brain
   - case-study
@@ -40,35 +38,18 @@ tags:
 | {Metric 2} | {Value} | {Value} | {X% / $X} |
 | {Metric 3} | {Value} | {Value} | {X% / $X} |
 
-## Evidence & Sources (Required)
+## Evidence & Sources (Optional)
+Include only when there are actual sourced claims.
 - **Claim**: {Result claim} | **Source**: {label/url} | **Date**: {date or To be verified}
 - **Claim**: {Result claim} | **Source**: {label/url} | **Date**: {date or To be verified}
-
-## Operator Guidance (Required)
-### Best-Fit Usage
-- **Persona**: {Target persona}
-- **Industry**: {Target industry}
-- **Use Case**: {Relevant use case}
-
-### Discovery Questions
-1. {Question}
-2. {Question}
-3. {Question}
-
-### Talk Tracks
-- **15s**: {Proof hook}
-- **30s**: {Result narrative}
-- **2min**: {Full customer story}
-
-### Next-Step CTA
-- {CTA}
 
 ## Customer Quotes (Optional)
 > "{Quote}"
 >
 > - **{Name}**, {Title} at {Company}
 
-## Cross-References (Required)
+## Cross-References (Optional)
+Include only when there are actual links to related files.
 - **Personas**: {links}
 - **Use Cases**: {links}
 - **Products**: {links}

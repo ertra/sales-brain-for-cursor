@@ -11,15 +11,18 @@ Use this checklist for each company folder under `brains/`.
 
 ## Required Section Checks
 
-- [ ] File contains `## Evidence & Sources`.
-- [ ] File contains `## Operator Guidance`.
-- [ ] File contains `## Cross-References`.
+- [ ] File contains `## Overview`.
+
+## Optional Section Checks (include only when content exists)
+
+- [ ] If `## Evidence & Sources` is present, it has real sourced claims (not all "To be verified").
+- [ ] If `## Cross-References` is present, links point to existing files.
 
 ## Evidence Quality Checks
 
-- [ ] Quantified claims have source URL and date.
-- [ ] Any unsupported claim is marked `To be verified`.
-- [ ] Source URLs are relevant (not placeholder).
+- [ ] Quantified claims have source and date when Evidence & Sources is present.
+- [ ] Unsupported claims are marked `To be verified` inline, or the section is omitted.
+- [ ] No section is included when all content would be "To be verified".
 
 ## Linking and Retrieval Checks
 

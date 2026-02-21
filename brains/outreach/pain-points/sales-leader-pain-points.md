@@ -1,22 +1,16 @@
 ---
 object_type: pain-points
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: sales-leader
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/customers
-  - https://g2.com/products/outreach/reviews
 tags:
   - sales-brain
   - pain-points
 ---
-
 # Sales Leader - Pain Points
 
 ## Overview
@@ -63,23 +57,6 @@ Sales leaders are pressured to hit aggressive targets while improving forecast r
 - **Claim**: Customer stories highlight outcomes tied to forecasting and pipeline impact (for example Siemens, Worldpay, Snowflake stories listed on customers page). | **Source**: Outreach customers page (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 - **Claim**: Third-party review pain language from G2 is currently inaccessible due to 403. | **Source**: G2 Outreach reviews (`https://g2.com/products/outreach/reviews`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Where do forecast misses most often originate in your current motion?
-2. How consistent are manager inspection and coaching workflows across teams?
-3. What productivity lift is required this year if hiring remains constrained?
-
-### Disqualification Criteria
-- Forecast quality is not a business priority.
-- No executive mandate to improve execution consistency or productivity.
-
-### Talk Tracks
-- **15s**: Outreach helps sales leaders run a more predictable and productive revenue operation.
-- **30s**: If your team is facing forecast variance and execution inconsistency, Outreach unifies workflows to improve visibility, intervention speed, and confidence in outcomes.
-- **2min**: Most sales leaders have enough activity data but not enough operational clarity. Outreach is positioned to connect engagement, deal management, and forecasting in one workflow so leaders can identify risk sooner and coach more consistently. That matters most when goals are rising and headcount is constrained. We can validate fit quickly by baselineing forecast variance, pipeline conversion health, and manager inspection quality.
-
-### Next-Step CTA
-- Run a forecast-variance diagnostic across the last two quarters.
 
 ## Trigger Events
 - Consecutive forecast misses.

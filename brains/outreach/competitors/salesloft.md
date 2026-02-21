@@ -1,24 +1,16 @@
 ---
 object_type: competitor
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 competitor: salesloft
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.salesloft.com/
-  - https://www.salesloft.com/company
-  - https://www.salesloft.com/platform
-  - https://en.wikipedia.org/wiki/SalesLoft
-  - https://techcrunch.com/2021/01/06/atlantas-salesloft-raises-100m-for-its-digital-sales-platform-now-valued-at-1-1b
-  - https://www.outreach.io/platform
 tags:
   - sales-brain
   - competitor
 ---
-
 # Competitor: Salesloft
 
 ## Overview
@@ -78,23 +70,6 @@ Salesloft is a primary competitive alternative to Outreach in enterprise revenue
 - **Claim**: Salesloft platform messaging states unified coverage across chat, prospecting, forecasting, coaching, and closing workflows. | **Source**: Salesloft platform page (`https://www.salesloft.com/platform`) | **Date**: 2026-02-20
 - **Claim**: Outreach positions itself as the only end-to-end sales solution across pipeline, deals, and forecasting. | **Source**: Outreach platform/home (`https://www.outreach.io/platform`, `https://www.outreach.io/`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Trap-Setting Questions
-1. Which single workflow breakdown hurts your number most today: prospecting, deal execution, or forecast confidence?
-2. Do you need native chat in this buying cycle, or is that outside current success criteria?
-3. Which KPI will decide this purchase in 90 days?
-
-### Disqualification Criteria
-- Buyer has non-negotiable requirement for built-in chat-native module.
-- Existing platform commitment makes near-term switch infeasible.
-
-### Talk Tracks
-- **15s**: Salesloft is strong in orchestration breadth; Outreach wins on execution impact when workflow consistency and outcomes are priority.
-- **30s**: If your priority is predictable execution across pipeline, deals, and forecasting, we should compare both platforms against the exact KPI gaps you need to close this quarter.
-- **2min**: Both vendors claim broad coverage and AI workflow value. The practical difference emerges in adoption quality, process consistency, and measurable KPI lift for your specific team structure. We recommend a side-by-side pilot with agreed success metrics before final selection.
-
-### Next-Step CTA
-- Run a competitor scorecard workshop with weighted evaluation criteria and KPI-backed proof requirements.
 
 ## Cross-References
 - **Products**: `brains/outreach/products/engage.md`, `brains/outreach/products/deal.md`, `brains/outreach/products/forecast.md`, `brains/outreach/products/amplify.md`

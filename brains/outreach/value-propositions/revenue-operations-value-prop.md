@@ -1,22 +1,17 @@
 ---
 object_type: value-proposition
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 product: deal
 persona: revenue-operations
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - value-proposition
 ---
-
 # Outreach Deal -> Revenue Operations Value Proposition
 
 ## Overview
@@ -54,23 +49,6 @@ For RevOps teams, Outreach delivers a cleaner revenue operating model by reducin
 - **Claim**: RevOps solution messaging focuses on finding and fixing leak, inefficiency, and risk across the funnel. | **Source**: Outreach platform (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Outreach packages cover Engage, Call, Meet, Deal, Forecast, and Amplify in one pricing structure. | **Source**: Outreach pricing (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Which workflow handoffs consume the most RevOps effort today?
-2. Where does pipeline leakage persist despite current tooling?
-3. How much time does forecast prep consume per cycle?
-
-### Disqualification Criteria
-- No RevOps ownership for process/system improvements.
-- No measurable inefficiency from current stack.
-
-### Talk Tracks
-- **15s**: Outreach helps RevOps teams run a cleaner, more reliable revenue process with less manual stitching.
-- **30s**: If your team is reconciling too many systems, Outreach consolidates key execution workflows and improves funnel visibility.
-- **2min**: RevOps effectiveness is often limited by fragmentation, not effort. Outreach packages core execution and forecast workflows into one platform model, helping teams reduce handoff friction and improve trust in the data used for decisions. This enables faster diagnosis and more scalable operational governance.
-
-### Next-Step CTA
-- Run a process-map workshop to quantify leakage and reconciliation overhead.
 
 ## Messaging Framework
 - **Subject Lines**: Reduce funnel leakage and RevOps toil; Consolidate revenue workflows for cleaner operations; Improve forecast operations without adding headcount

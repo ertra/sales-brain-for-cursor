@@ -1,21 +1,16 @@
 ---
 object_type: objection
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: revenue-operations
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/resources
 tags:
   - sales-brain
   - objections
 ---
-
 # Revenue Operations - Objection Handling
 
 ## Overview
@@ -48,24 +43,6 @@ Common RevOps objections around implementation complexity, integration reliabili
 - **Claim**: Outreach pricing FAQ describes package customization, professional services options, and per-user pricing with no platform fees. | **Source**: Outreach pricing (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 - **Claim**: Outreach platform messaging highlights governance and integrations as part of trust architecture. | **Source**: Outreach platform (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Questions to Ask Early
-1. Which workflows are hardest to govern today?
-2. What integration dependencies are non-negotiable?
-3. How much RevOps capacity is available this quarter?
-4. Which tools are most likely to be consolidated?
-
-### Disqualification Criteria
-- No RevOps project bandwidth for pilot.
-- No willingness to define measurable operational outcomes.
-
-### Talk Tracks
-- **15s**: We can reduce RevOps risk by piloting one governed workflow first.
-- **30s**: Rather than a full migration, start with the highest-friction motion and prove operational impact.
-- **2min**: RevOps objections are usually about execution risk and workload. A scoped implementation with explicit success metrics protects governance while generating evidence for broader decision-making.
-
-### Next-Step CTA
-- Schedule a RevOps technical discovery to map dependencies and pilot constraints.
 
 ## Quick Reference
 | Objection Type | Key Response | Proof Point |

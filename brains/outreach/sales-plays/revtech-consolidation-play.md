@@ -1,20 +1,15 @@
 ---
 object_type: sales-play
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/resources
 tags:
   - sales-brain
   - sales-play
 ---
-
 # Sales Play: RevTech Consolidation
 
 ## Play Overview

@@ -7,8 +7,6 @@ version: v1
 last_updated: "{date}"
 last_verified: "To be verified"
 confidence: medium
-source_urls:
-  - "{Primary source URL}"
 tags:
   - sales-brain
   - use-case
@@ -43,34 +41,18 @@ tags:
 | {Metric 2} | {X hours} |
 | {Metric 3} | {$X} |
 
-## Evidence & Sources (Required)
+## Evidence & Sources (Optional)
+Include only when there are actual sourced claims.
 - **Claim**: {Use-case proof} | **Source**: {label/url} | **Date**: {date or To be verified}
 - **Claim**: {Use-case proof} | **Source**: {label/url} | **Date**: {date or To be verified}
-
-## Operator Guidance (Required)
-### Discovery Questions
-1. {Question}
-2. {Question}
-3. {Question}
-
-### Disqualification Criteria
-- {No triggering event}
-- {No measurable business case}
-
-### Talk Tracks
-- **15s**: {Hook}
-- **30s**: {Scenario framing}
-- **2min**: {Full use-case narrative}
-
-### Next-Step CTA
-- {CTA}
 
 ## Demo Focus (Optional)
 - {Feature 1}
 - {Feature 2}
 - {Feature 3}
 
-## Cross-References (Required)
+## Cross-References (Optional)
+Include only when there are actual links to related files.
 - **Personas**: {links}
 - **Pain Points**: {links}
 - **Value Propositions**: {links}

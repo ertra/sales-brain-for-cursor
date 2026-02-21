@@ -1,23 +1,17 @@
 ---
 object_type: value-proposition
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 product: engage
 persona: sales-development
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - value-proposition
 ---
-
 # Outreach Engage -> Sales Development Value Proposition
 
 ## Overview
@@ -56,23 +50,6 @@ For SDR/BDR teams, Outreach increases pipeline output quality by combining struc
 - **Claim**: Outreach claims up to 60% seller productivity increase through AI-driven workflows. | **Source**: Outreach homepage/platform (`https://www.outreach.io/`, `https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Customer story listing includes +25% meetings, +66% positive reply rate, and 10x pipeline coverage outcomes. | **Source**: Outreach customers (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. What are your current activity-to-meeting and reply-rate baselines?
-2. Which parts of SDR workflow are most manual today?
-3. Where does sequence execution consistency break down?
-
-### Disqualification Criteria
-- No outbound/pipeline generation motion.
-- No KPI tracking for conversion efficiency.
-
-### Talk Tracks
-- **15s**: Outreach helps SDR teams book more qualified meetings with better workflow consistency and AI support.
-- **30s**: If your team is high-activity but low-conversion, Outreach improves sequence execution and personalization quality so more effort turns into pipeline.
-- **2min**: Pipeline generation usually breaks when reps must choose between speed and relevance. Outreach combines structured engagement workflows with AI assistance so teams can maintain quality while scaling output. Customer story outcomes suggest meaningful gains in meetings, reply rates, and coverage when these workflows are implemented well.
-
-### Next-Step CTA
-- Run an outbound efficiency pilot with one segment and pre/post KPI comparison.
 
 ## Messaging Framework
 - **Subject Lines**: Increase SDR conversion without extra headcount; Scale outreach quality with AI workflows; Turn more activity into qualified pipeline

@@ -1,20 +1,16 @@
 ---
 object_type: objection
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: account-executive
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
 tags:
   - sales-brain
   - objections
 ---
-
 # Account Executive - Objection Handling
 
 ## Overview
@@ -47,24 +43,6 @@ AE objections are usually practical: extra clicks, workflow interruption, and co
 - **Claim**: Outreach pricing highlights AI summaries, action items, and deal-health workflows that can reduce AE admin burden. | **Source**: Outreach pricing (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 - **Claim**: Outreach customer listings include +93% meeting-to-opportunity and +92% qualified opportunity outcomes. | **Source**: Outreach customers (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Questions to Ask Early
-1. Which tasks consume too much AE time weekly?
-2. Where do deals stall most often?
-3. How are follow-up and next steps managed today?
-4. Which KPI should improve first: cycle time, stage conversion, or win rate?
-
-### Disqualification Criteria
-- AE team rejects any workflow standardization.
-- No baseline metrics for conversion/cycle-time.
-
-### Talk Tracks
-- **15s**: This is about reducing AE admin and improving deal progression, not adding process.
-- **30s**: We start with one workflow where automation saves time and increases conversion quality.
-- **2min**: AE resistance usually comes from tool fatigue. By targeting one high-friction activity first and proving impact on conversion or cycle-time, adoption becomes outcome-driven rather than compliance-driven.
-
-### Next-Step CTA
-- Run a 30-day AE pilot on one stage bottleneck.
 
 ## Quick Reference
 | Objection Type | Key Response | Proof Point |

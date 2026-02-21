@@ -1,21 +1,16 @@
 ---
 object_type: objection
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: customer-success-manager
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - objections
 ---
-
 # Customer Success Manager - Objection Handling
 
 ## Overview
@@ -48,24 +43,6 @@ CSM objections often focus on whether the platform is too sales-centric and whet
 - **Claim**: Outreach platform and homepage messaging include customer-success role outcomes and early renewal-risk orchestration. | **Source**: Outreach homepage/platform (`https://www.outreach.io/`, `https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Customer stories listing includes "increases expansion opps by 68%" for Workato. | **Source**: Outreach customers (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Questions to Ask Early
-1. How early do you detect renewal risk today?
-2. What context is missing in sales-to-CS handoff?
-3. How are expansion opportunities currently identified?
-4. Which CS metric is most urgent this quarter?
-
-### Disqualification Criteria
-- No retention/expansion KPI ownership.
-- No cross-team collaboration between sales and CS.
-
-### Talk Tracks
-- **15s**: This is a lifecycle execution use case, not just a sales tool decision.
-- **30s**: We can prove value on one renewal-risk segment with minimal process disruption.
-- **2min**: CS objections are usually about relevance and change timing. By focusing on early risk detection and account continuity for one segment, teams can validate whether the platform drives retention outcomes before broader rollout.
-
-### Next-Step CTA
-- Select one renewal cohort for early-risk workflow pilot.
 
 ## Quick Reference
 | Objection Type | Key Response | Proof Point |

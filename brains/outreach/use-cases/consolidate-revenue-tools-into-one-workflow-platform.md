@@ -1,21 +1,16 @@
 ---
 object_type: use-case
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 use_case: consolidate-revenue-tools-into-one-workflow-platform
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
 tags:
   - sales-brain
   - use-case
 ---
-
 # Use Case: Consolidate Revenue Tools into One Workflow Platform
 
 ## Overview
@@ -49,23 +44,6 @@ Teams with fragmented sales tooling face process friction, poor visibility, and 
 - **Claim**: Outreach positions itself as the only end-to-end sales solution and one platform for Lead Gen, Sales, CS, and RevOps. | **Source**: Outreach homepage/platform (`https://www.outreach.io/`, `https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Outreach pricing states per-user pricing with no platform fees and package-based capability model. | **Source**: Outreach pricing (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. How many tools are currently required to run your core revenue workflows?
-2. Which handoffs create the most delay or data-quality issues?
-3. What consolidation outcomes matter most: cost, visibility, or execution consistency?
-
-### Disqualification Criteria
-- No stack rationalization initiative.
-- No cross-functional sponsorship for platform-level change.
-
-### Talk Tracks
-- **15s**: Outreach helps teams replace fragmented revenue tooling with one workflow platform.
-- **30s**: If your stack is creating process drag, Outreach consolidates key motions so teams execute faster with clearer shared visibility.
-- **2min**: Many organizations buy best-of-breed tools over time and end up with workflow fragmentation and reporting friction. Outreach positions an integrated package model for prospecting, deal execution, conversation intelligence, and forecasting, which can simplify operations and improve consistency across teams.
-
-### Next-Step CTA
-- Run a tool-sprawl and workflow-friction assessment across GTM functions.
 
 ## Demo Focus (Optional)
 - Multi-role workflow coverage across packages

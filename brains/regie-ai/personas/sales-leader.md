@@ -1,19 +1,16 @@
 ---
 object_type: persona
 company: regie-ai
-company_display_name: Regie.ai
+company_display_name: "Regie Ai"
 persona: sales-leader
 version: v1
 last_updated: 2026-02-20
 last_verified: To be verified
 confidence: medium
-source_urls:
-  - https://www.regie.ai/
 tags:
   - sales-brain
   - persona
 ---
-
 # Sales Leader
 
 ## Overview
@@ -43,24 +40,6 @@ Sales leaders at Regie.ai target pipeline growth, rep productivity, and predicta
 - Claim: Regie.ai positions 3–5x reach without headcount growth | Source: company.md | Date: To be verified
 - Claim: Platform unifies AI agents and human reps in one flow | Source: company.md | Date: To be verified
 
-## Operator Guidance
-### Discovery Questions
-1. Where are reps losing the most time in prospecting today?
-2. What pipeline target are you trying to hit without extra headcount?
-3. Which tools create the most workflow friction for your team?
-
-### Disqualification Criteria
-- No active pipeline growth initiative
-- No willingness to change existing outbound workflow
-
-### Talk Tracks
-- 15s: Regie.ai helps sales teams scale pipeline with AI-native engagement workflows.
-- 30s: Combine AI agents and reps in one system to reduce manual work and increase quality outreach.
-- 2min: Regie.ai replaces fragmented SEP workflows with a unified AI + rep model, improving pipeline execution and productivity.
-
-### Next-Step CTA
-- Align on one outbound motion to pilot.
-- Define success metrics and timeline for first team rollout.
 
 ## Cross-References
 - Related pain points: `../pain-points/sales-leader-pain-points.md`

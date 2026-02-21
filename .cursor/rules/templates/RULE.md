@@ -23,6 +23,6 @@ All templates are stored in the `templates/` directory. Use these as the basis f
 When creating or updating any sales object:
 
 1. Read `templates/V1-CONTRACT.md` first.
-2. Enforce required frontmatter and required sections.
-3. Reject unsupported quantified claims; write `To be verified` when evidence is missing.
-4. Include `Evidence & Sources`, `Operator Guidance`, and `Cross-References` sections.
+2. Enforce required frontmatter and required sections (Overview).
+3. Include `Evidence & Sources` and `Cross-References` only when there is real content; omit sections that would contain only "To be verified".
+4. For unsupported quantified claims, write `To be verified` inline or omit the section.

@@ -7,8 +7,6 @@ version: v1
 last_updated: "{date}"
 last_verified: "To be verified"
 confidence: medium
-source_urls:
-  - "{Primary source URL}"
 tags:
   - sales-brain
   - pain-points
@@ -55,34 +53,18 @@ tags:
 | {Pain 2} | Medium | Weekly | {Product} | {Strong/Medium/Low} |
 | {Pain 3} | High | Quarterly | {Product} | {Strong/Medium/Low} |
 
-## Evidence & Sources (Required)
+## Evidence & Sources (Optional)
+Include only when there are actual sourced claims.
 - **Claim**: {Pain evidence} | **Source**: {label/url} | **Date**: {date or To be verified}
 - **Claim**: {Pain evidence} | **Source**: {label/url} | **Date**: {date or To be verified}
-
-## Operator Guidance (Required)
-### Discovery Questions
-1. {Question}
-2. {Question}
-3. {Question}
-
-### Disqualification Criteria
-- {Pain not material}
-- {No owner or urgency}
-
-### Talk Tracks
-- **15s**: {Hook}
-- **30s**: {Pain to value}
-- **2min**: {Pain narrative with proof}
-
-### Next-Step CTA
-- {CTA}
 
 ## Trigger Events (Optional)
 - {Trigger event 1}
 - {Trigger event 2}
 - {Trigger event 3}
 
-## Cross-References (Required)
+## Cross-References (Optional)
+Include only when there are actual links to related files.
 - **Persona**: {link}
 - **Products**: {link}
 - **Value Propositions**: {link}

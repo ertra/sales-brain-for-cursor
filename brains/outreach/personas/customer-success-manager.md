@@ -1,20 +1,16 @@
 ---
 object_type: persona
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: customer-success-manager
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/
 tags:
   - sales-brain
   - persona
 ---
-
 # Customer Success Manager
 
 ## Overview
@@ -52,24 +48,6 @@ Customer Success Managers own retention and expansion outcomes after handoff fro
 - **Claim**: Outreach includes Customer Success as a core role in platform solution messaging. | **Source**: Outreach platform solutions section (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Outreach highlights AI-driven orchestration for retention and expansion across account teams. | **Source**: Outreach homepage (`https://www.outreach.io/`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. How early can your team reliably detect renewal risk today?
-2. What context is typically lost between sales close and CS handoff?
-3. Which expansion motions are hardest to operationalize consistently?
-
-### Disqualification Criteria
-- No post-sales KPI ownership for renewals/expansion.
-- No need for coordinated account workflows across teams.
-
-### Talk Tracks
-- **15s**: Outreach helps CS teams reduce renewal risk with better account context and coordinated workflows.
-- **30s**: If churn risk appears too late, Outreach aligns account signals and actions across teams so CSMs can intervene earlier and expand smarter.
-- **2min**: CS teams often inherit incomplete context and then spend cycles rebuilding account understanding instead of driving outcomes. Outreach positions a shared workflow model where account insights and actions can be coordinated across sales and CS, reducing redundant conversations and improving renewal readiness. We can validate fit by reviewing your handoff quality, risk detection timing, and expansion process maturity.
-
-### Next-Step CTA
-- Review recent renewal losses for early warning signals that were missed.
-- Pilot a cross-team account workflow for one renewal cohort.
 
 ## Cross-References
 - **Pain Points**: `brains/outreach/pain-points/customer-success-manager-pain-points.md`

@@ -159,8 +159,8 @@ All → Sales Plays (operationalize)
 7. Reference `templates/V1-CONTRACT.md` and object template in `templates/` for new objects
 8. **Scrape competitor websites directly** for competitive intel
 9. **Use G2 reviews** for real customer feedback and objections
-10. Every object must include frontmatter + required `Evidence & Sources`, `Operator Guidance`, and `Cross-References` sections
-11. If a claim cannot be sourced, mark it `To be verified`
+10. Every object must include frontmatter and `## Overview`. Include `Evidence & Sources` and `Cross-References` only when there is real content; omit sections that would contain only "To be verified".
+11. If a claim cannot be sourced, mark it `To be verified` inline, or omit the section.
 
 ## Response Style
 

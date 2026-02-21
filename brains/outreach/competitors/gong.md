@@ -1,22 +1,16 @@
 ---
 object_type: competitor
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 competitor: gong
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.gong.io/
-  - https://www.gong.io/about
-  - https://www.gong.io/platform/
-  - https://www.outreach.io/platform
 tags:
   - sales-brain
   - competitor
 ---
-
 # Competitor: Gong
 
 ## Overview
@@ -76,23 +70,6 @@ Gong is a top competitor in revenue AI, conversation intelligence, and forecasti
 - **Claim**: Gong platform page highlights Revenue Graph, AI agents, forecasting, and cross-lifecycle workflow coverage. | **Source**: Gong platform (`https://www.gong.io/platform/`) | **Date**: 2026-02-20
 - **Claim**: Outreach positions one AI revenue workflow platform across lead gen, sales, CS, and RevOps. | **Source**: Outreach platform/home (`https://www.outreach.io/platform`, `https://www.outreach.io/`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Trap-Setting Questions
-1. Is your top priority intelligence depth, workflow consistency, or both?
-2. Which teams must adopt first to create measurable business impact?
-3. What KPI will prove success in the first 90 days?
-
-### Disqualification Criteria
-- Buyer has strategic standardization mandate on Gong.
-- Scope requires very limited capabilities outside existing incumbent.
-
-### Talk Tracks
-- **15s**: Gong is a strong AI revenue platform; Outreach competes by focusing on practical cross-team execution outcomes.
-- **30s**: If you need predictable execution across prospecting, deals, and forecasting, we should compare both platforms on adoption speed and KPI impact, not category labels.
-- **2min**: In Gong-vs-Outreach deals, both products can appear similar at headline level. The differentiator is often operating-model fit: which platform better supports your current team structure, execution cadence, and change capacity while delivering measurable outcomes quickly.
-
-### Next-Step CTA
-- Run a structured trial with shared scorecard (forecast confidence, conversion lift, adoption rate).
 
 ## Cross-References
 - **Products**: `brains/outreach/products/engage.md`, `brains/outreach/products/deal.md`, `brains/outreach/products/forecast.md`, `brains/outreach/products/meet.md`

@@ -1,18 +1,15 @@
 ---
 object_type: case-study
 company: regie-ai
-company_display_name: Regie.ai
+company_display_name: "Regie Ai"
 version: v1
 last_updated: 2026-02-20
 last_verified: To be verified
 confidence: medium
-source_urls:
-  - https://www.regie.ai/
 tags:
   - sales-brain
   - case-study
 ---
-
 # Case Study: Reputation
 
 ## Snapshot
@@ -44,24 +41,6 @@ Reputation is referenced in Regie.ai proof points for outbound performance impro
 - Claim: Reputation cited with 48% positive email replies | Source: target-companies.md | Date: To be verified
 - Claim: Regie.ai customer examples emphasize pipeline impact | Source: company.md | Date: To be verified
 
-## Operator Guidance
-### Best-Fit Usage
-- **Persona**: Sales Leader
-- **Industry**: B2B outbound-heavy teams
-- **Use Case**: Scale quality outreach
-
-### Discovery Questions
-1. What reply-rate baseline are you currently at?
-2. How do you currently personalize at scale?
-3. Which metrics would define pilot success?
-
-### Talk Tracks
-- 15s: Customers like Reputation show strong positive-reply outcomes with Regie.ai.
-- 30s: Regie.ai helps teams improve outbound quality and conversion with AI-native workflows.
-- 2min: Use the Reputation proof point to anchor a measurable pilot around reply rate and pipeline lift.
-
-### Next-Step CTA
-- Agree baseline metrics and run a 30-60 day pilot.
 
 ## Cross-References
 - Personas: `../personas/sales-leader.md`

@@ -1,23 +1,16 @@
 ---
 object_type: competitor
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 competitor: clari
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.clari.com/
-  - https://www.clari.com/about/
-  - https://www.clari.com/products/product-overview/
-  - https://www.crunchbase.com/organization/clari
-  - https://www.outreach.io/platform
 tags:
   - sales-brain
   - competitor
 ---
-
 # Competitor: Clari
 
 ## Overview
@@ -77,23 +70,6 @@ Clari is a major enterprise competitor in forecasting, revenue orchestration, an
 - **Claim**: Clari product portfolio includes Capture, Inspect, Align, Copilot, Forecast, Analyze, and Groove across prospecting-to-retention workflows. | **Source**: Clari product overview (`https://www.clari.com/products/product-overview/`) | **Date**: 2026-02-20
 - **Claim**: Outreach positions one AI platform for revenue teams spanning lead gen, sales, CS, and RevOps. | **Source**: Outreach platform/home (`https://www.outreach.io/platform`, `https://www.outreach.io/`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Trap-Setting Questions
-1. Is your core problem forecast governance, frontline execution consistency, or both?
-2. How much implementation complexity can your team absorb this quarter?
-3. Which KPI improvement is mandatory in the first 90 days?
-
-### Disqualification Criteria
-- Buyer has explicit standardization mandate on Clari.
-- Team lacks resources for platform change while expecting near-term outcome lift.
-
-### Talk Tracks
-- **15s**: Clari is strong in enterprise forecast orchestration; Outreach competes best when execution impact across teams is the immediate priority.
-- **30s**: If you need predictability plus frontline workflow consistency, we should benchmark both options against your specific conversion and productivity gaps.
-- **2min**: This is usually not a feature decision; it is an operating-model decision. Clari offers a strong enterprise forecast and revenue-context narrative, while Outreach positions tightly around cross-functional execution workflows and measurable productivity/pipeline outcomes. The right choice depends on your top KPI constraints and adoption capacity.
-
-### Next-Step CTA
-- Build a 90-day KPI-based bakeoff plan with forecast, conversion, and adoption metrics.
 
 ## Cross-References
 - **Products**: `brains/outreach/products/forecast.md`, `brains/outreach/products/deal.md`, `brains/outreach/products/amplify.md`

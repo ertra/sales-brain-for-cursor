@@ -1,20 +1,16 @@
 ---
 object_type: use-case
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 use_case: predictable-forecast-and-pipeline-visibility
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - use-case
 ---
-
 # Use Case: Predictable Forecast and Pipeline Visibility
 
 ## Overview
@@ -48,23 +44,6 @@ Revenue leadership teams need a reliable, shared view of forecast and pipeline r
 - **Claim**: Outreach emphasizes AI-assisted forecasting, pipeline diagnostics, and predictable revenue outcomes. | **Source**: Outreach platform (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Customer stories list forecasting and quota-attainment outcomes (Siemens and Snowflake story listings). | **Source**: Outreach customers (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Where does commit accuracy break down most often?
-2. Which pipeline risks are usually discovered too late?
-3. How much manager time is spent reconciling forecast status?
-
-### Disqualification Criteria
-- No executive ownership of forecast quality.
-- No measurable business impact from forecast variance.
-
-### Talk Tracks
-- **15s**: Outreach helps leaders move from reactive forecasting to predictable pipeline execution.
-- **30s**: If forecast confidence is low, Outreach provides shared risk visibility and standardized intervention workflows.
-- **2min**: Most teams do not fail forecasting because of lack of data, but because signals are late and operating cadences vary by manager. Outreach is positioned to connect deal and pipeline workflows with forecasting so risk can be identified and acted on earlier.
-
-### Next-Step CTA
-- Run a 2-quarter forecast variance and stage-risk diagnostic workshop.
 
 ## Demo Focus (Optional)
 - Forecast rollup and scenario views

@@ -1,20 +1,16 @@
 ---
 object_type: product
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 product: call
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/platform
 tags:
   - sales-brain
   - product
 ---
-
 # Outreach Call (Voice Package)
 
 ## Overview
@@ -53,20 +49,6 @@ Usage/consumption-based calling plans and phone numbers purchased at the organiz
 - **Claim**: Call includes integrated sales dialer, live call monitoring, custom dispositions, and AI-powered call summary/Q&A. | **Source**: Outreach pricing page (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 - **Claim**: Outreach positions one shared platform for revenue teams to standardize workflows and reduce disjointed process. | **Source**: Outreach platform page (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. What percentage of outbound execution relies on calls versus email/social today?
-2. How do managers currently monitor call quality and coaching consistency?
-3. Where do reps lose time between dialing activity and post-call follow-up?
-
-### Talk Tracks
-- **15s**: Call gives your team an integrated dialer and AI-supported call workflows inside Outreach.
-- **30s**: Instead of treating calls as a disconnected tool, Call brings dialing, monitoring, and post-call intelligence into the same workflow reps use for revenue execution.
-- **2min**: Phone outreach often breaks process consistency because dialing, dispositioning, and follow-up live in different systems. Call packages this motion into Outreach with integrated dialing and AI-assisted post-call support. That helps teams run cleaner call operations, improve manager visibility, and shorten the gap between conversation and next action. We should test this against your current call throughput, coaching process, and CRM hygiene.
-
-### Next-Step CTA
-- Map current telephony workflow and identify call-to-next-step delays.
-- Design a pilot with a call-heavy segment and manager coaching scorecard.
 
 ## Cross-References
 - **Personas**: `brains/outreach/personas/`

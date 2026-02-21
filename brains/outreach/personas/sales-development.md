@@ -1,21 +1,16 @@
 ---
 object_type: persona
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: sales-development
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/
-  - https://www.outreach.io/pricing
 tags:
   - sales-brain
   - persona
 ---
-
 # Sales Development
 
 ## Overview
@@ -54,24 +49,6 @@ Sales Development (SDR/BDR leaders and reps) owns top-of-funnel pipeline generat
 - **Claim**: Outreach role messaging for Sales Development emphasizes sending the right message to the right person at the right time. | **Source**: Outreach platform solutions section (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Engage and Amplify packages focus on outreach execution and AI-driven productivity workflows. | **Source**: Outreach pricing page (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Which part of your outbound workflow consumes the most rep time today?
-2. What are your current conversion rates from activity to meetings and pipeline?
-3. Where does rep-to-rep variability hurt team output most?
-
-### Disqualification Criteria
-- No outbound strategy or no SDR/BDR ownership model.
-- No tracking of conversion metrics from outreach to pipeline.
-
-### Talk Tracks
-- **15s**: Outreach helps sales development teams generate more qualified pipeline with smarter, repeatable outreach workflows.
-- **30s**: If your reps are overworked and conversion is inconsistent, Outreach combines structured engagement and AI support to increase output without sacrificing quality.
-- **2min**: SDR teams usually know they need more pipeline but get stuck between volume pressure and personalization quality. Outreach addresses this by combining engagement workflows, account prioritization context, and AI-assisted execution in one platform. That helps reps move faster while keeping message relevance high. We can validate fit by benchmarking your current activity-to-meeting funnel and identifying where workflow improvements create the largest lift.
-
-### Next-Step CTA
-- Baseline SDR funnel metrics and identify top conversion drop-offs.
-- Pilot AI-assisted outreach workflows for one segment and compare lift.
 
 ## Cross-References
 - **Pain Points**: `brains/outreach/pain-points/sales-development-pain-points.md`

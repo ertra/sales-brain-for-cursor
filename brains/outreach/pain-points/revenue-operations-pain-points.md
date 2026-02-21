@@ -1,21 +1,16 @@
 ---
 object_type: pain-points
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: revenue-operations
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
-  - https://g2.com/products/outreach/reviews
 tags:
   - sales-brain
   - pain-points
 ---
-
 # Revenue Operations - Pain Points
 
 ## Overview
@@ -62,23 +57,6 @@ RevOps teams struggle with funnel leakage, fragmented process execution, and man
 - **Claim**: Outreach pricing exposes modular coverage across engagement, calls, deal, forecast, and AI agents, indicating consolidation positioning. | **Source**: Outreach pricing page (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 - **Claim**: Third-party review detail from G2 is currently unavailable due to 403 access denial. | **Source**: G2 Outreach reviews (`https://g2.com/products/outreach/reviews`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Which pipeline stage shows the highest leakage today?
-2. How many systems must RevOps reconcile before forecast calls?
-3. What part of forecast prep is most manual and error-prone?
-
-### Disqualification Criteria
-- No RevOps authority to change process/system workflows.
-- No measurable operational pain from current stack fragmentation.
-
-### Talk Tracks
-- **15s**: Outreach helps RevOps reduce leakage and run a cleaner revenue operating system.
-- **30s**: If process consistency and reporting trust are weak, Outreach unifies execution workflows to improve reliability and reduce manual reconciliation.
-- **2min**: RevOps teams often have enough tooling but still lack a dependable operating model because workflows are fragmented across point systems. Outreach positions a connected platform across engagement, deal, and forecast motions, which can reduce reconciliation effort and improve decision speed. The strongest fit is when leadership needs cleaner funnel governance and more credible forecast operations. We can quantify this by mapping leakage hotspots, tool handoff breaks, and forecast cycle effort.
-
-### Next-Step CTA
-- Conduct a funnel leakage and workflow-fragmentation assessment by stage.
 
 ## Trigger Events
 - New RevOps leader hired.

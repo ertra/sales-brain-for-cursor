@@ -6,8 +6,6 @@ version: v1
 last_updated: "{date}"
 last_verified: "To be verified"
 confidence: medium
-source_urls:
-  - "{Primary URL}"
 tags:
   - sales-brain
   - company
@@ -38,28 +36,10 @@ tags:
 - **Key Differentiators**: {Unique selling points}
 - **Competitive Context**: {Where they win/lose}
 
-## Evidence & Sources (Required)
+## Evidence & Sources (Optional)
+Include only when there are actual sourced claims.
 - **Claim**: {Proof claim} | **Source**: {source label/url} | **Date**: {date or To be verified}
 - **Claim**: {Proof claim} | **Source**: {source label/url} | **Date**: {date or To be verified}
-
-## Operator Guidance (Required)
-### Discovery Questions
-1. {Question about business priority}
-2. {Question about current process}
-3. {Question about measurable impact}
-
-### Disqualification Criteria
-- {No active pain or initiative}
-- {Missing required systems/integration baseline}
-
-### Talk Tracks
-- **15s**: {Short positioning line}
-- **30s**: {Short value framing}
-- **2min**: {Narrative with pain, differentiation, proof}
-
-### Next-Step CTA
-- {CTA for discovery}
-- {CTA for technical/ROI review}
 
 ## Scraped Signals (Optional)
 ### Page Title
@@ -71,7 +51,8 @@ tags:
 ### Important Links Discovered
 {Links from scraped page}
 
-## Cross-References (Required)
+## Cross-References (Optional)
+Include only when there are actual links to related files.
 - **Target Companies**: {link}
 - **Products**: {link(s)}
 - **Personas**: {link(s)}

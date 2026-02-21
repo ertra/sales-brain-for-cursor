@@ -1,21 +1,16 @@
 ---
 object_type: product
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 product: forecast
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/
 tags:
   - sales-brain
   - product
 ---
-
 # Outreach Forecast
 
 ## Overview
@@ -53,20 +48,6 @@ Packaged as a module with request-pricing model.
 - **Claim**: Forecast package includes pipeline dashboard, forecast rollup, AI projection, and scenario planning. | **Source**: Outreach pricing page (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 - **Claim**: Outreach states teams can reduce prep time and improve forecast accuracy with AI-assisted modeling. | **Source**: Outreach homepage (`https://www.outreach.io/`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. How much weekly time is spent collecting and reconciling forecast inputs?
-2. Where do forecast misses typically originate: pipeline quality, stage discipline, or rep judgment?
-3. What scenario modeling is required by leadership/board but currently hard to produce?
-
-### Talk Tracks
-- **15s**: Forecast helps leaders move from manual forecast prep to AI-assisted, scenario-based forecasting.
-- **30s**: If forecast confidence is low and prep time is high, Forecast adds structured roll-ups and AI projections to improve accuracy and planning speed.
-- **2min**: Forecast breakdowns usually come from inconsistent data interpretation and late risk visibility. Forecast gives leaders a unified view with roll-ups, scenario modeling, and projection support to increase predictability. Because it sits in the broader Outreach workflow context, teams can connect forecast movement to real execution signals, not just static status updates. We should test against your current forecast cycle time, commit accuracy, and variance patterns.
-
-### Next-Step CTA
-- Baseline current forecast cadence, prep effort, and variance metrics.
-- Pilot one quarter forecast workflow in parallel with current process for comparison.
 
 ## Cross-References
 - **Personas**: `brains/outreach/personas/`

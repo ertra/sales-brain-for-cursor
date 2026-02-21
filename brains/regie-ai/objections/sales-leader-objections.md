@@ -1,19 +1,16 @@
 ---
 object_type: objection
 company: regie-ai
-company_display_name: Regie.ai
+company_display_name: "Regie Ai"
 persona: sales-leader
 version: v1
 last_updated: 2026-02-20
 last_verified: To be verified
 confidence: medium
-source_urls:
-  - https://www.regie.ai/
 tags:
   - sales-brain
   - objections
 ---
-
 # Sales Leader - Objection Handling
 
 ## Overview
@@ -45,23 +42,6 @@ Common objections from sales leaders evaluating Regie.ai for outbound pipeline g
 - Claim: Regie.ai emphasizes AI-native SEP differentiation | Source: company.md | Date: To be verified
 - Claim: Target companies commonly use incumbent SEP tools | Source: target-companies.md | Date: To be verified
 
-## Operator Guidance
-### Questions to Ask Early
-1. Which pipeline KPI is most under pressure?
-2. Where is your current outbound process still manual?
-3. What would justify a workflow change this quarter?
-
-### Disqualification Criteria
-- No measurable KPI target for outbound improvements
-- No stakeholder available to own pilot outcome
-
-### Talk Tracks
-- 15s: Regie.ai helps teams modernize outbound with AI-native workflows.
-- 30s: Consolidate fragmented tools and reduce manual prospecting to increase pipeline velocity.
-- 2min: Use a controlled pilot to validate productivity and quality gains before broader rollout.
-
-### Next-Step CTA
-- Align pilot scope, metrics, and decision timeline.
 
 ## Quick Reference
 | Objection Type | Key Response | Proof Point |

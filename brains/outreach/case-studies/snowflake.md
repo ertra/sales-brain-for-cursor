@@ -1,18 +1,15 @@
 ---
 object_type: case-study
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/resources/stories/snowflake-customer-story
 tags:
   - sales-brain
   - case-study
 ---
-
 # Case Study: Snowflake
 
 ## Snapshot
@@ -44,24 +41,6 @@ Snowflake used Outreach to operationalize account-based sales motions and improv
 - **Claim**: Snowflake customer story headline reports 15% improvement in reps hitting quota. | **Source**: Snowflake customer story (`https://www.outreach.io/resources/stories/snowflake-customer-story`) | **Date**: 2026-02-20
 - **Claim**: Story describes outreach automation, account prioritization, and cross-functional process alignment as core operating improvements. | **Source**: Snowflake customer story (`https://www.outreach.io/resources/stories/snowflake-customer-story`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Best-Fit Usage
-- **Persona**: Sales Development, Sales Leader
-- **Industry**: Enterprise B2B software
-- **Use Case**: ABM execution, quota attainment, repeatable SDR process
-
-### Discovery Questions
-1. How repeatable is your account-based selling process today?
-2. Where do SDR/AE handoffs break down in upmarket motions?
-3. What percentage of reps are currently at quota and why?
-
-### Talk Tracks
-- **15s**: Snowflake improved quota attainment by operationalizing account-based execution in Outreach.
-- **30s**: If upmarket selling is straining your team, this case shows how process consistency and prioritization can lift rep outcomes.
-- **2min**: As Snowflake moved upmarket, the challenge was less about effort and more about execution orchestration across accounts and teams. Outreach provided a repeatable operational layer for prioritization, sequencing, and messaging consistency, contributing to measurable quota and reply-rate outcomes.
-
-### Next-Step CTA
-- Build an ABM execution scorecard and run a quota-attainment pilot for one segment.
 
 ## Customer Quotes
 > "It's a common misconception in sales execution that you can hire more people to produce more pipeline. That's not the case."

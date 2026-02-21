@@ -7,8 +7,6 @@ version: v1
 last_updated: "{date}"
 last_verified: "To be verified"
 confidence: medium
-source_urls:
-  - "{Product URL}"
 tags:
   - sales-brain
   - product
@@ -44,26 +42,13 @@ tags:
 ## Pricing Model (Optional)
 {If available}
 
-## Evidence & Sources (Required)
+## Evidence & Sources (Optional)
+Include only when there are actual sourced claims.
 - **Claim**: {Metric/quote} | **Source**: {label/url} | **Date**: {date or To be verified}
 - **Claim**: {Metric/quote} | **Source**: {label/url} | **Date**: {date or To be verified}
 
-## Operator Guidance (Required)
-### Discovery Questions
-1. {Question}
-2. {Question}
-3. {Question}
-
-### Talk Tracks
-- **15s**: {Short hook}
-- **30s**: {Value statement}
-- **2min**: {Narrative}
-
-### Next-Step CTA
-- {CTA}
-- {CTA}
-
-## Cross-References (Required)
+## Cross-References (Optional)
+Include only when there are actual links to related files.
 - **Personas**: {link(s)}
 - **Pain Points**: {link(s)}
 - **Value Propositions**: {link(s)}

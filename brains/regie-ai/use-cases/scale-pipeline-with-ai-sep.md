@@ -1,19 +1,16 @@
 ---
 object_type: use-case
 company: regie-ai
-company_display_name: Regie.ai
+company_display_name: "Regie Ai"
 use_case: scale-pipeline-with-ai-sep
 version: v1
 last_updated: 2026-02-20
 last_verified: To be verified
 confidence: medium
-source_urls:
-  - https://www.regie.ai/
 tags:
   - sales-brain
   - use-case
 ---
-
 # Use Case: Scale Pipeline With AI SEP
 
 ## Overview
@@ -47,23 +44,6 @@ Teams adopt Regie.ai to increase outbound pipeline while reducing manual prospec
 - Claim: Regie.ai positions growth in reach and conversations without extra headcount | Source: company.md | Date: To be verified
 - Claim: Customer examples report pipeline impact outcomes | Source: target-companies.md | Date: To be verified
 
-## Operator Guidance
-### Discovery Questions
-1. What pipeline uplift are you targeting this quarter?
-2. Which step in outbound execution is your biggest bottleneck?
-3. How quickly can your team test a new motion?
-
-### Disqualification Criteria
-- No outbound motion to optimize
-- No measurable pipeline KPI ownership
-
-### Talk Tracks
-- 15s: Scale pipeline faster with one AI-native engagement platform.
-- 30s: Regie.ai combines AI agents and reps to improve outbound quality and productivity.
-- 2min: Consolidate outbound execution into RegieOne to reduce manual tasks, increase personalization quality, and drive more pipeline from existing teams.
-
-### Next-Step CTA
-- Define pilot target segment and success KPIs.
 
 ## Cross-References
 - Personas: `../personas/sales-leader.md`

@@ -1,19 +1,16 @@
 ---
 object_type: competitor
 company: regie-ai
-company_display_name: Regie.ai
+company_display_name: "Regie Ai"
 competitor: outreach
 version: v1
 last_updated: 2026-02-20
 last_verified: To be verified
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
 tags:
   - sales-brain
   - competitor
 ---
-
 # Competitor: Outreach
 
 ## Overview
@@ -62,23 +59,6 @@ Outreach is a major incumbent in sales execution workflows and is a frequent alt
 - Claim: Outreach frequently appears in Regie.ai comparison context | Source: target-companies.md | Date: To be verified
 - Claim: Regie.ai positions as AI-native SEP alternative to legacy stacks | Source: company.md | Date: To be verified
 
-## Operator Guidance
-### Trap-Setting Questions
-1. How much manual work remains in your current Outreach flow?
-2. How many separate tools do reps use daily for outbound?
-3. Where are conversion bottlenecks despite current workflows?
-
-### Disqualification Criteria
-- Prospect mandates incumbent-only renewal
-- No appetite for workflow change
-
-### Talk Tracks
-- 15s: Regie.ai is built natively for AI + rep orchestration, not retrofitted.
-- 30s: Replace fragmented execution with one AI-native SEP to improve pipeline productivity.
-- 2min: Keep what works from current process while modernizing outbound execution with agents, better personalization, and consolidated workflows.
-
-### Next-Step CTA
-- Run side-by-side pilot on one segment.
 
 ## Cross-References
 - Products: `../products/regie-one.md`

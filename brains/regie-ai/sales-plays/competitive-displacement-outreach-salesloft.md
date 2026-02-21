@@ -1,18 +1,15 @@
 ---
 object_type: sales-play
 company: regie-ai
-company_display_name: Regie.ai
+company_display_name: "Regie Ai"
 version: v1
 last_updated: 2026-02-20
 last_verified: To be verified
 confidence: medium
-source_urls:
-  - https://www.regie.ai/
 tags:
   - sales-brain
   - sales-play
 ---
-
 # Sales Play: Competitive Displacement (Outreach/Salesloft)
 
 ## Play Overview
@@ -51,24 +48,6 @@ tags:
 | "This seems like another tool" | Position as reducing tool sprawl, not adding complexity. |
 | "Not the right time" | Offer scoped pilot with clear success metrics. |
 
-## Operator Guidance
-### Discovery Questions
-1. Is your team on Outreach or Salesloft today, and when does your contract come up for renewal?
-2. How much time do reps spend on manual prospecting vs. selling?
-3. Who owns the decision to consolidate or change SEP tools?
-
-### Disqualification Criteria
-- No outbound motion or no measurable pipeline from outbound.
-- No pilot owner or change initiative in the next 6 months.
-
-### Talk Tracks
-- **15s**: Move from legacy SEP workflows to AI-native execution—one platform, fewer tools.
-- **30s**: Regie.ai combines agents and reps to improve quality outreach and pipeline velocity; we can run a scoped pilot so you see results before committing.
-- **2min**: Replace fragmented tooling with one AI-native engagement flow; prove value through a 30–60 day pilot on one segment, then expand.
-
-### Next-Step CTA
-- Schedule a 30-minute discovery to map current stack and pilot scope.
-- Run a 30–60 day pilot on one segment (e.g. one team or one region).
 
 ## Evidence & Sources
 - Claim: Regie.ai positions itself as AI-native SEP alternative | Source: company.md | Date: To be verified

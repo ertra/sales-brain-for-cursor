@@ -1,22 +1,17 @@
 ---
 object_type: value-proposition
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 product: forecast
 persona: sales-leader
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - value-proposition
 ---
-
 # Outreach Forecast -> Sales Leader Value Proposition
 
 ## Overview
@@ -55,23 +50,6 @@ For sales leaders, Outreach provides forecast confidence and execution consisten
 - **Claim**: Customer stories listing includes "Outreach helps Snowflake improve the number of reps who hit quota by 15%." | **Source**: Outreach customers page (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 - **Claim**: Forecast-related customer story examples (Siemens) are listed as proof themes. | **Source**: Outreach customers page (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Where does forecast variance hurt planning most today?
-2. How quickly can leaders identify and act on stalled opportunities?
-3. What productivity lift is required without adding headcount?
-
-### Disqualification Criteria
-- Forecast quality is not a strategic KPI.
-- Leadership has no appetite for process change.
-
-### Talk Tracks
-- **15s**: Outreach helps sales leaders forecast with confidence and coach execution before risk compounds.
-- **30s**: If commits are unstable, Outreach ties deal and pipeline signals to one forecast workflow so leaders can act earlier and plan with confidence.
-- **2min**: Revenue misses often come from late visibility, inconsistent manager routines, and disconnected execution tooling. Outreach positions one workflow model across pipeline, deal management, and forecasting so leaders can detect risk faster and improve rep productivity. The result is a more defensible number and fewer quarter-end surprises.
-
-### Next-Step CTA
-- Align on forecast variance baseline and define a forecast-improvement pilot.
 
 ## Messaging Framework
 - **Subject Lines**: Forecast confidence without spreadsheet chaos; Improve commit accuracy this quarter; Scale revenue predictability with AI workflows

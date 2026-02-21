@@ -50,7 +50,7 @@ The `-d` flag specifies where to write `scraping.log`.
 
 For every object created in this workflow, enforce `templates/V1-CONTRACT.md`:
 
-- Include YAML frontmatter (`object_type`, `company`, `version`, `last_updated`, `last_verified`, `confidence`, `source_urls`, `tags`).
+- Include YAML frontmatter (`object_type`, `company`, `version`, `last_updated`, `last_verified`, `confidence`, `tags`). Do not add `source_urls` in frontmatter; keep sources in the Evidence & Sources section.
 - Include required sections: `Overview`, `Evidence & Sources`, `Operator Guidance`, `Cross-References`.
 - If proof is missing, write `To be verified` instead of inventing metrics.
 

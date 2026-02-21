@@ -7,8 +7,6 @@ version: v1
 last_updated: "{date}"
 last_verified: "To be verified"
 confidence: medium
-source_urls:
-  - "{Primary source URL}"
 tags:
   - sales-brain
   - objections
@@ -42,28 +40,10 @@ Common objections from {Persona Name} and how to handle them with evidence.
 - **Proof Point**: {Evidence}
 - **Follow-Up Question**: "{Question}"
 
-## Evidence & Sources (Required)
+## Evidence & Sources (Optional)
+Include only when there are actual sourced claims.
 - **Claim**: {Proof claim} | **Source**: {label/url} | **Date**: {date or To be verified}
 - **Claim**: {Proof claim} | **Source**: {label/url} | **Date**: {date or To be verified}
-
-## Operator Guidance (Required)
-### Questions to Ask Early
-1. {Budget question}
-2. {Timeline question}
-3. {Decision process question}
-4. {Competitive landscape question}
-
-### Disqualification Criteria
-- {No decision process}
-- {No champion or owner}
-
-### Talk Tracks
-- **15s**: {Short rebuttal framing}
-- **30s**: {Structured response}
-- **2min**: {Full objection handling narrative}
-
-### Next-Step CTA
-- {CTA}
 
 ## Quick Reference (Required)
 | Objection Type | Key Response | Proof Point |
@@ -73,7 +53,8 @@ Common objections from {Persona Name} and how to handle them with evidence.
 | Competition | {One-liner} | {Evidence} |
 | Status Quo | {One-liner} | {Evidence} |
 
-## Cross-References (Required)
+## Cross-References (Optional)
+Include only when there are actual links to related files.
 - **Personas**: {links}
 - **Competitors**: {links}
 - **Case Studies**: {links}

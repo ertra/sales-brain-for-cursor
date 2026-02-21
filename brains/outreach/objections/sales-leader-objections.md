@@ -1,21 +1,16 @@
 ---
 object_type: objection
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: sales-leader
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - objections
 ---
-
 # Sales Leader - Objection Handling
 
 ## Overview
@@ -48,24 +43,6 @@ Common objections from sales leaders and responses focused on forecast confidenc
 - **Claim**: Outreach platform messaging emphasizes forecast confidence, pipeline visibility, and productivity outcomes. | **Source**: Outreach platform (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Customer story listings include +15% reps hitting quota and multiple forecasting-focused stories. | **Source**: Outreach customers (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Questions to Ask Early
-1. Which revenue KPI is under most executive pressure?
-2. What level of rollout risk is acceptable this quarter?
-3. Who must sign off on forecast/process changes?
-4. What result is needed to justify expansion?
-
-### Disqualification Criteria
-- No executive ownership for forecast/productivity outcomes.
-- No sponsor willing to run even a limited pilot.
-
-### Talk Tracks
-- **15s**: We can improve predictability without disrupting your quarter through phased rollout.
-- **30s**: Start with one workflow and one KPI, then expand once outcome is proven.
-- **2min**: Leadership objections usually focus on risk and timing. A tightly scoped pilot gives measurable proof while preserving execution continuity, which is often the fastest path to confident adoption.
-
-### Next-Step CTA
-- Approve pilot scope: one team, one KPI, one quarter checkpoint.
 
 ## Quick Reference
 | Objection Type | Key Response | Proof Point |

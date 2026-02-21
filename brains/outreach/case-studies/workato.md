@@ -1,18 +1,15 @@
 ---
 object_type: case-study
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/resources/stories/workato-customer-story
 tags:
   - sales-brain
   - case-study
 ---
-
 # Case Study: Workato
 
 ## Snapshot
@@ -44,24 +41,6 @@ Workato used Outreach to balance personalization with scale as it entered new ma
 - **Claim**: Workato customer story headline reports a 68% quarter-over-quarter increase in expansion opportunities with Outreach. | **Source**: Workato customer story (`https://www.outreach.io/resources/stories/workato-customer-story`) | **Date**: 2026-02-20
 - **Claim**: Story details Outreach-based A/B message testing, sentiment analysis, and data-driven pipeline management. | **Source**: Workato customer story (`https://www.outreach.io/resources/stories/workato-customer-story`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Best-Fit Usage
-- **Persona**: Revenue Operations, Sales Development leader
-- **Industry**: High-growth B2B software
-- **Use Case**: New-market outbound scaling with message-quality control
-
-### Discovery Questions
-1. How are you currently validating persona messaging before broad rollout?
-2. Where do expansion opportunities get lost in your current process?
-3. Which leading indicators do you trust to measure pipeline health?
-
-### Talk Tracks
-- **15s**: Workato scaled into new markets while lifting expansion opportunities using Outreach-driven testing and insight loops.
-- **30s**: If you need scale without robotic messaging, this case shows how Outreach can standardize process while preserving personalization.
-- **2min**: Workato faced a common growth-stage challenge: scale fast, enter new markets, and keep messaging relevant. Outreach gave their RevOps and SDR leadership a system for testing, measuring, and iterating persona-level messaging while monitoring pipeline health. The measurable output was significant expansion growth.
-
-### Next-Step CTA
-- Launch a new-market messaging pilot with A/B framework and expansion KPI tracking.
 
 ## Customer Quotes
 > "Data always wins."

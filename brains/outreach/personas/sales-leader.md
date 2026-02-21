@@ -1,20 +1,16 @@
 ---
 object_type: persona
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: sales-leader
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/
 tags:
   - sales-brain
   - persona
 ---
-
 # Sales Leader
 
 ## Overview
@@ -52,24 +48,6 @@ Sales leaders (CRO, VP Sales, Head of Sales) own revenue outcomes, forecast reli
 - **Claim**: Outreach highlights forecasting confidence, deal visibility, and revenue predictability as platform outcomes. | **Source**: Outreach homepage/platform (`https://www.outreach.io/`, `https://www.outreach.io/platform`) | **Date**: 2026-02-20
 - **Claim**: Outreach role messaging says Sales Leaders need a clear picture of why they win/lose and what to do next. | **Source**: Outreach platform solutions section (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. Where do forecast misses typically originate in your current process?
-2. Which pipeline or deal risks are hardest for leadership to spot early?
-3. What productivity gains are required this year without additional hires?
-
-### Disqualification Criteria
-- No executive KPI ownership for forecast accuracy or pipeline outcomes.
-- No urgency around process consistency or revenue visibility.
-
-### Talk Tracks
-- **15s**: Outreach helps sales leaders run a more predictable revenue engine with clearer pipeline and forecast visibility.
-- **30s**: If quarterly execution is inconsistent, Outreach unifies deal, pipeline, and forecasting workflows so leaders can intervene earlier and plan with confidence.
-- **2min**: Sales leaders usually have data but not operational clarity. Outreach connects execution workflows across prospecting, deal progression, and forecasting so managers and reps work from one system of action. That helps reduce surprises, improve productivity, and align teams to the same revenue truth. We can validate fit quickly against your commit accuracy, pipeline conversion, and rep productivity goals.
-
-### Next-Step CTA
-- Run a leadership forecast and pipeline diagnostic with current KPI baselines.
-- Define a success plan around forecast variance and manager intervention cadence.
 
 ## Cross-References
 - **Pain Points**: `brains/outreach/pain-points/sales-leader-pain-points.md` (To be verified)

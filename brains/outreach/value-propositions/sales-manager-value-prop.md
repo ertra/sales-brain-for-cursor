@@ -1,22 +1,17 @@
 ---
 object_type: value-proposition
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 product: meet
 persona: sales-manager
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
 tags:
   - sales-brain
   - value-proposition
 ---
-
 # Outreach Meet -> Sales Manager Value Proposition
 
 ## Overview
@@ -54,23 +49,6 @@ For sales managers, Outreach improves coaching quality and intervention speed by
 - **Claim**: Meet package includes real-time recording/transcription, AI smart assist, and automated action items. | **Source**: Outreach pricing (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 - **Claim**: Outreach role messaging for Sales Managers emphasizes pipeline health and rep performance improvement. | **Source**: Outreach platform (`https://www.outreach.io/platform`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Discovery Questions
-1. How much manager time is spent collecting pipeline status vs coaching?
-2. Which rep behaviors are hardest to coach consistently today?
-3. How late in the cycle do risks usually become visible?
-
-### Disqualification Criteria
-- Managers do not own coaching outcomes.
-- No recurring manager operating cadence to improve.
-
-### Talk Tracks
-- **15s**: Outreach helps managers coach smarter and act on risk earlier.
-- **30s**: If manager time is stretched, Outreach surfaces the most important conversation and deal signals for better weekly interventions.
-- **2min**: Frontline management effectiveness depends on intervention timing and coaching quality. Outreach combines call intelligence and deal context so managers can identify what to coach, with whom, and when. That increases team consistency without requiring more manager hours.
-
-### Next-Step CTA
-- Pilot a manager rhythm with weekly risk-priority deal and call reviews.
 
 ## Messaging Framework
 - **Subject Lines**: Improve manager coaching impact; Catch deal risk before it slips; Run action-driven pipeline reviews

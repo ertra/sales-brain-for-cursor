@@ -1,21 +1,16 @@
 ---
 object_type: objection
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: sales-development
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/customers
 tags:
   - sales-brain
   - objections
 ---
-
 # Sales Development - Objection Handling
 
 ## Overview
@@ -48,24 +43,6 @@ SDR/BDR objections are usually about workflow speed, personalization quality, an
 - **Claim**: Engage includes sequences/templates/automation, and Amplify includes AI personalization/engagement capabilities. | **Source**: Outreach pricing (`https://www.outreach.io/pricing`) | **Date**: 2026-02-20
 - **Claim**: Customer stories listing includes +25% meetings booked and +66% positive email reply improvements. | **Source**: Outreach customers (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Questions to Ask Early
-1. Where does your outbound funnel underperform most?
-2. How do you currently enforce message-quality standards?
-3. What is current cost per qualified opportunity?
-4. Which SDR segment is easiest to pilot safely?
-
-### Disqualification Criteria
-- No outbound KPI baseline.
-- Team rejects any workflow standardization or QA process.
-
-### Talk Tracks
-- **15s**: AI is an assistive lever for quality and speed, not a replacement for rep judgment.
-- **30s**: We can prove conversion lift with one segment pilot and strict quality guardrails.
-- **2min**: SDR objections are usually quality and change-management concerns. A controlled pilot with defined QA standards and measurable funnel goals makes adoption evidence-driven and low risk.
-
-### Next-Step CTA
-- Launch one 30-day SDR pilot with conversion and quality scorecards.
 
 ## Quick Reference
 | Objection Type | Key Response | Proof Point |

@@ -1,22 +1,16 @@
 ---
 object_type: objection
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 persona: common
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/pricing
-  - https://www.outreach.io/platform
-  - https://www.outreach.io/customers
-  - https://g2.com/products/outreach/reviews
 tags:
   - sales-brain
   - objections
 ---
-
 # Common - Objection Handling
 
 ## Overview
@@ -50,24 +44,6 @@ Common objections across Outreach buying committees and practical responses tied
 - **Claim**: Outreach customer stories list measurable outcomes (for example +25% meetings, +66% positive replies, +15% reps hitting quota). | **Source**: Outreach customers (`https://www.outreach.io/customers`) | **Date**: 2026-02-20
 - **Claim**: G2 third-party objection evidence unavailable due to HTTP 403. | **Source**: G2 Outreach reviews (`https://g2.com/products/outreach/reviews`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Questions to Ask Early
-1. What top KPI is currently under most pressure?
-2. Who owns final decision and rollout readiness?
-3. What timeline is realistic for first measurable win?
-4. Which competitors are in play and why?
-
-### Disqualification Criteria
-- No KPI-driven buying objective.
-- No internal owner for deployment and adoption.
-
-### Talk Tracks
-- **15s**: Outreach helps teams improve execution outcomes with phased, KPI-driven rollout.
-- **30s**: We can de-risk this by scoping one high-impact workflow and proving measurable lift before broader adoption.
-- **2min**: Most objections here are about uncertainty, not outright rejection. By aligning on one workflow, one metric, and one owner, teams can validate fit quickly and make a lower-risk decision with evidence.
-
-### Next-Step CTA
-- Agree on one pilot workflow, baseline metric, and 60-day success criteria.
 
 ## Quick Reference
 | Objection Type | Key Response | Proof Point |

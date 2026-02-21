@@ -1,18 +1,15 @@
 ---
 object_type: case-study
 company: outreach
-company_display_name: Outreach
+company_display_name: "Outreach"
 version: v1
 last_updated: 2026-02-20
 last_verified: 2026-02-20
 confidence: medium
-source_urls:
-  - https://www.outreach.io/resources/stories/worldpay-customer-story
 tags:
   - sales-brain
   - case-study
 ---
-
 # Case Study: Worldpay
 
 ## Snapshot
@@ -44,24 +41,6 @@ Worldpay used Outreach to improve pipeline generation and conversion through mor
 - **Claim**: Worldpay story headline reports close to $100M added sales pipeline with Outreach. | **Source**: Worldpay customer story (`https://www.outreach.io/resources/stories/worldpay-customer-story`) | **Date**: 2026-02-20
 - **Claim**: Story lists +10% conversion, +25% open rate, and +15% response rate improvements. | **Source**: Worldpay customer story (`https://www.outreach.io/resources/stories/worldpay-customer-story`) | **Date**: 2026-02-20
 
-## Operator Guidance
-### Best-Fit Usage
-- **Persona**: Sales Development leader, Sales Leader
-- **Industry**: Enterprise financial services and large B2B organizations
-- **Use Case**: Pipeline acceleration and conversion optimization
-
-### Discovery Questions
-1. How much pipeline growth is required this year from sales development?
-2. Which sequence-level metrics are currently underperforming?
-3. How are reps using performance insights to adjust strategy in-flight?
-
-### Talk Tracks
-- **15s**: Worldpay used Outreach to drive major pipeline growth and measurable conversion improvement.
-- **30s**: If your team needs both scale and quality, this case shows how strategic sequence execution can lift core funnel metrics.
-- **2min**: Worldpay's outcome story is useful when buyers need enterprise-scale proof. The combination of pipeline impact and conversion/engagement lift suggests Outreach improved both quantity and quality of outbound execution.
-
-### Next-Step CTA
-- Build a pipeline growth plan with conversion and sequence-quality benchmarks.
 
 ## Customer Quotes
 > "We are no longer just chasing numbers. We're crafting experiences, building relationships, and setting new standards for excellence."
